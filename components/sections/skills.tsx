@@ -99,7 +99,7 @@ export default function Skills() {
         </motion.div>
 
         {/* Skills Grid - Centré */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10 mb-12 md:mb-16 lg:mb-20 xl:mb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10 mb-12 md:mb-16 lg:mb-20 xl:mb-24">
           {skillCategories.map((category, idx) => (
             <motion.div
               key={category.title}
@@ -139,13 +139,13 @@ export default function Skills() {
                       transition={{ duration: 0.3, delay: idx * 0.1 + skillIdx * 0.05 }}
                       className="flex items-center justify-between gap-2"
                     >
-                      <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-gray-700 dark:text-gray-300">
+                      <span className="text-lg sm:text-xl md:text-2xl lg:text-lg xl:text-xl font-medium text-gray-700 dark:text-gray-300">
                         {t(`skills.${skill.name}`)}
                       </span>
                       
                       {/* Level Badge avec gradient */}
                       <span
-                        className={`rounded-full text-base sm:text-lg md:text-xl font-semibold text-white bg-gradient-to-r ${
+                        className={`rounded-full text-base sm:text-lg md:text-xl lg:text-sm xl:text-base font-semibold text-white bg-gradient-to-r ${
                           levelColors[skill.level]
                         } shadow-sm whitespace-nowrap`}
                         style={{ paddingLeft: '1.25rem', paddingRight: '1.25rem', paddingTop: '0.5rem', paddingBottom: '0.5rem', marginTop: '0.5rem' }}
