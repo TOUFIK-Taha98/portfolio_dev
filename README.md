@@ -1,255 +1,141 @@
-# 🚀 Portfolio Moderne - Développeur Full Stack
+# 💼 Portfolio Personnel - Taha TOUFIK
 
-Un portfolio moderne et unique développé avec Next.js 14, TypeScript, Tailwind CSS et Framer Motion.
+Portfolio professionnel d'un Ingénieur en Développement Informatique, développé avec Next.js 16, TypeScript et Tailwind CSS.
 
-![Next.js](https://img.shields.io/badge/Next.js-14-black)
+![Next.js](https://img.shields.io/badge/Next.js-16-black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38bdf8)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-11-ff69b4)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-ff69b4)
 
-## ✨ Fonctionnalités
+## ✨ Caractéristiques
 
-- 🎨 **Design Dark Mode élégant** avec gradients vibrants et effets subtils
-- 🌟 **Animations fluides** optimisées avec Framer Motion
-- 💫 **Arrière-plan animé** avec système de particules connectées
-- 🖱️ **Curseur personnalisé** (desktop uniquement)
-- 📱 **100% Responsive** - parfait sur tous les appareils
-- ⚡ **Performances optimisées** avec Next.js 14
-- 🎯 **Sections complètes** :
-  - Hero avec présentation dynamique
-  - Compétences avec barres de progression animées
-  - Galerie de projets avec filtres et modal détaillé
-  - Timeline d'expériences professionnelles
-  - Carousel de témoignages interactif
-  - Formulaire de contact avec validation
-- 🔍 **SEO-friendly** avec metadata optimisée
+- 🌍 **Multilingue** - Support complet FR/EN/AR avec changement de direction (RTL pour l'arabe)
+- 🎨 **Design moderne** avec Dark/Light Mode
+- 💫 **Animations fluides** optimisées avec Framer Motion
+- 📱 **Entièrement Responsive** - Optimisé pour tous les écrans
+- ⚡ **Performance maximale** avec Next.js 16 et optimisations SSG
+- 🎯 **Sections professionnelles** :
+  - Présentation dynamique
+  - Showcase de projets avec détails
+  - Compétences techniques
+  - Expériences professionnelles
+  - Informations de contact
+- 🔍 **SEO optimisé** pour une meilleure visibilité
 
 ## 🛠️ Stack Technique
 
-- **Framework**: Next.js 14 (App Router)
-- **Language**: TypeScript
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript 5
 - **Styling**: Tailwind CSS 4
-- **Animations**: Framer Motion
-- **Icons**: Lucide React
-- **Utils**: clsx, tailwind-merge
+- **Animations**: Framer Motion 12
+- **3D Graphics**: React Three Fiber
+- **Internationalisation**: Custom Context API (FR/EN/AR)
+- **Theme**: next-themes (Dark/Light Mode)
+- **Icons**: Lucide React, React Icons
 
 ## 📋 Prérequis
 
 ⚠️ **Important**: Ce projet nécessite Node.js >= 20.9.0
 
-Vérifiez votre version :
 ```bash
-node --version
+node --version  # Vérifiez votre version
 ```
 
-Si vous avez une version inférieure, installez la dernière version LTS depuis [nodejs.org](https://nodejs.org/)
+## 🚀 Installation & Développement
 
-## 🚀 Installation
-
-1. Installer les dépendances :
 ```bash
+# Installer les dépendances
 npm install
-```
 
-2. Lancer le serveur de développement :
-```bash
+# Lancer en mode développement
 npm run dev
+
+# Build de production
+npm run build
+
+# Démarrer en production
+npm start
 ```
 
-3. Ouvrir [http://localhost:3000](http://localhost:3000) dans votre navigateur
+Le site sera accessible sur [http://localhost:3000](http://localhost:3000)
 
-## 🎨 Personnalisation Rapide
-
-### 1. **Informations personnelles** (5 min)
-
-**Hero Section** - `components/sections/hero.tsx` (lignes 30-40)
-```typescript
-<h1>Votre Nom</h1>  // Remplacez "Votre Nom"
-<h2>Développeur Full Stack</h2>  // Votre titre
-<p>Votre description...</p>  // Votre pitch
-```
-
-**Contact** - `components/sections/contact.tsx` (lignes 70-72)
-```typescript
-{ icon: Mail, value: 'votre@email.com' }
-{ icon: Phone, value: '+33 6 12 34 56 78' }
-{ icon: MapPin, value: 'Votre Ville, France' }
-```
-
-**Liens sociaux** - `components/sections/hero.tsx` (lignes 75-79)
-```typescript
-{ icon: Github, href: 'https://github.com/votre-username' }
-{ icon: Linkedin, href: 'https://linkedin.com/in/votre-profil' }
-{ icon: Mail, href: 'mailto:votre@email.com' }
-```
-
-### 2. **Compétences** (10 min)
-
-`components/sections/skills.tsx` - Modifiez l'array `skillCategories`
-```typescript
-const skillCategories = [
-  {
-    title: 'Frontend',
-    skills: [
-      { name: 'React / Next.js', level: 95 },  // 0-100
-      // Ajoutez vos compétences...
-    ],
-  },
-  // Ajoutez vos catégories...
-];
-```
-
-### 3. **Projets** (15 min)
-
-`components/sections/projects.tsx` - Modifiez l'array `projects`
-```typescript
-const projects = [
-  {
-    title: 'Nom du Projet',
-    category: 'Full Stack',  // Full Stack, Frontend, Backend, Mobile
-    description: 'Description courte',
-    longDescription: 'Description détaillée',
-    tags: ['Next.js', 'TypeScript'],
-    github: 'https://github.com/...',
-    demo: 'https://...',
-  },
-];
-```
-
-### 4. **Expériences** (10 min)
-
-`components/sections/experience.tsx` - Modifiez l'array `experiences`
-```typescript
-const experiences = [
-  {
-    company: 'Nom Entreprise',
-    logo: '🚀',  // Emoji
-    position: 'Votre Poste',
-    period: '2022 - Présent',
-    description: 'Description du poste',
-    achievements: [
-      'Réalisation 1',
-      'Réalisation 2',
-    ],
-    tags: ['Tech1', 'Tech2'],
-  },
-];
-```
-
-### 5. **Témoignages** (5 min)
-
-`components/sections/testimonials.tsx` - Modifiez l'array `testimonials`
-```typescript
-const testimonials = [
-  {
-    name: 'Nom Client',
-    position: 'Poste',
-    company: 'Entreprise',
-    avatar: '👩‍💼',  // Emoji
-    testimonial: 'Le témoignage...',
-    rating: 5,
-  },
-];
-```
-
-### 6. **Couleurs du thème** (2 min)
-
-`app/globals.css` - Modifiez les variables CSS
-```css
-:root {
-  --primary: #6366f1;    /* Couleur principale (Indigo) */
-  --secondary: #8b5cf6;  /* Couleur secondaire (Purple) */
-  --accent: #ec4899;     /* Couleur d'accent (Pink) */
-}
-```
-
-## 📁 Structure du Projet
+## 📁 Architecture du Projet
 
 ```
 portfolio/
-├── app/
-│   ├── layout.tsx          # Layout principal avec metadata
-│   ├── page.tsx            # Page d'accueil (assemblage)
-│   └── globals.css         # Styles globaux et variables
+├── app/                    # Next.js App Router
+│   ├── layout.tsx         # Layout principal + Metadata SEO
+│   ├── page.tsx           # Page d'accueil
+│   └── globals.css        # Styles globaux Tailwind
 ├── components/
-│   ├── sections/           # Sections du portfolio
+│   ├── sections/          # Sections principales
 │   │   ├── hero.tsx
-│   │   ├── skills.tsx
 │   │   ├── projects.tsx
+│   │   ├── skills.tsx
 │   │   ├── experience.tsx
-│   │   ├── testimonials.tsx
 │   │   └── contact.tsx
-│   └── ui/                 # Composants UI réutilisables
+│   └── ui/                # Composants réutilisables
 │       ├── navbar.tsx
 │       ├── footer.tsx
-│       ├── custom-cursor.tsx
-│       └── animated-background.tsx
+│       ├── animated-background.tsx
+│       └── custom-cursor.tsx
+├── contexts/
+│   └── LanguageContext.tsx  # Gestion multilingue
 ├── lib/
-│   └── utils.ts            # Fonctions utilitaires
-└── public/                 # Fichiers statiques (images)
+│   ├── utils.ts           # Utilitaires
+│   └── translations/      # Fichiers de traduction (FR/EN/AR)
+└── public/                # Assets statiques
+    └── images/            # Images de projets
 ```
 
-## 📦 Build & Déploiement
+## 📦 Déploiement
 
-### Build local
+### Production Build
 ```bash
 npm run build
 npm start
 ```
 
-### Déploiement sur Vercel (Recommandé)
-1. Push votre code sur GitHub
-2. Importez sur [Vercel](https://vercel.com)
-3. Déployez automatiquement ! ✨
+### Déploiement sur Vercel
+Ce projet est optimisé pour Vercel avec configuration automatique :
+- Push sur la branche `main` déclenche un déploiement automatique
+- Node.js 20+ utilisé automatiquement
+- Variables d'environnement configurables via dashboard Vercel
 
-### Autres plateformes
-- **Netlify**: Connectez votre repo GitHub
-- **AWS Amplify**: Suivez le guide AWS
-- **Self-hosted**: Build puis déployez le dossier `.next`
+## 🌐 Fonctionnalités Multilingues
 
-## 🎯 Prochaines Étapes
+Le portfolio supporte 3 langues avec changement automatique de direction :
+- 🇫🇷 **Français** (par défaut)
+- 🇬🇧 **Anglais**
+- 🇸🇦 **Arabe** (avec support RTL)
 
-1. ✅ Personnalisez toutes les sections avec vos informations
-2. 📸 Ajoutez vos vraies images de projets dans `/public`
-3. 🔗 Configurez vos vrais liens (GitHub, LinkedIn, etc.)
-4. 📧 Intégrez un backend pour le formulaire de contact (optionnel)
-5. 🚀 Déployez sur Vercel
-6. 📊 Ajoutez Google Analytics (optionnel)
-7. 🌐 Connectez un nom de domaine personnalisé
+Les traductions sont gérées via des fichiers JSON dans `lib/translations/`.
 
-## 💡 Conseils
+## 🎨 Thèmes
 
-- **Images de projets**: Utilisez des screenshots ou créez des mockups sur [Figma](https://figma.com)
-- **Formulaire de contact**: Intégrez [Formspree](https://formspree.io/) ou [EmailJS](https://www.emailjs.com/) pour recevoir les messages
-- **Analytics**: Ajoutez Google Analytics ou [Vercel Analytics](https://vercel.com/analytics)
-- **Optimisation**: Next.js optimise automatiquement vos images et performances
+- **Dark Mode** (par défaut) : Optimisé pour la lecture prolongée
+- **Light Mode** : Disponible via le toggle dans la navbar
+- Préférence sauvegardée automatiquement dans le localStorage
 
-## 🐛 Problèmes Courants
+## ⚡ Performances
 
-**Le serveur ne démarre pas**
-- Vérifiez votre version de Node.js (>= 20.9.0)
-- Supprimez `node_modules` et `package-lock.json`, puis réinstallez
-
-**Les animations ne fonctionnent pas**
-- Vérifiez que Framer Motion est bien installé
-- Les composants animés doivent avoir la directive `'use client'`
-
-**Erreurs Tailwind**
-- Tailwind CSS 4 utilise une nouvelle syntaxe
-- Consultez la [documentation officielle](https://tailwindcss.com/docs)
+- ✅ Static Site Generation (SSG) pour temps de chargement ultra-rapide
+- ✅ Images optimisées automatiquement par Next.js Image
+- ✅ Code splitting et lazy loading
+- ✅ Fonts Google optimisées avec next/font
 
 ## 📄 Licence
 
-Ce projet est open source sous licence MIT.
+© 2024 Taha TOUFIK. Tous droits réservés.
 
-## 🤝 Contribution
+## 📞 Contact
 
-Les contributions sont bienvenues ! N'hésitez pas à ouvrir une issue ou PR.
-
-## 💬 Support
-
-Questions ? Ouvrez une issue sur GitHub ou contactez-moi directement.
+Pour toute question professionnelle ou opportunité de collaboration :
+- Portfolio : [En ligne prochainement]
+- LinkedIn : [Votre profil LinkedIn]
+- GitHub : [@TOUFIK-Taha98](https://github.com/TOUFIK-Taha98)
+- Email : taha.toufik@example.com
 
 ---
 
-Fait avec ❤️ par un développeur Full Stack | Propulsé par [Next.js](https://nextjs.org)
+Développé avec ❤️ et Next.js
