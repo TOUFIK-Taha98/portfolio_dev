@@ -65,7 +65,8 @@
     "backend": "الواجهة الخلفية",
     "mobile": "الجوال",
     "wordpress": "ووردبريس",
-    "view_demo": "عرض تجريبي",
+    "view_demo": "عرض التجربة",
+    "view_project": "عرض المشروع",
     "source_code": "الكود المصدري",
     "items": {
       "ecommerce": {
