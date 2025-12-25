@@ -9,7 +9,7 @@ import Footer from '@/components/ui/footer';
 
 export default function Home() {
   return (
-    <div className="relative">
+    <div className="relative w-full overflow-x-hidden">
       {/* Animated Background */}
       <AnimatedBackground />
 
@@ -22,7 +22,7 @@ export default function Home() {
       <Navbar />
 
       {/* Main Content */}
-      <main className="relative z-10">
+      <main className="relative z-10 w-full">
         <Hero />
         <Projects />
         <Skills />
