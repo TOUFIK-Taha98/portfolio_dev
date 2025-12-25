@@ -39,7 +39,7 @@ export default function Navbar() {
       }`}
     >
       <div className="w-full mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-        <div className="flex items-center h-16">
+        <div className="flex items-center justify-between h-16 gap-4">
           {/* Logo */}
           <motion.a
             href="#home"
@@ -70,17 +70,18 @@ export default function Navbar() {
           </div>
           
           {/* Theme Toggle & Language Switcher - Côté droit */}
-          <div className="hidden md:flex items-center gap-4 ml-4">
+          <div className="hidden md:flex items-center gap-4 flex-shrink-0">
             <ThemeToggle />
             <LanguageSwitcher />
           </div>
 
           {/* Mobile: Language Switcher & Menu Button */}
-          <div className="md:hidden flex items-center gap-3 ml-auto rtl:ml-0 rtl:mr-auto rtl:flex-row-reverse">
+          <div className="md:hidden flex items-center gap-3 flex-shrink-0 rtl:flex-row-reverse">
             <LanguageSwitcher />
             <button
-              className="text-gray-900 dark:text-white"
+              className="text-gray-900 dark:text-white p-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Menu"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
