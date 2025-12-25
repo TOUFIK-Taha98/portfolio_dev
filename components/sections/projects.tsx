@@ -281,13 +281,13 @@ export default function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex flex-wrap justify-center gap-4 mb-12"
+          className="grid grid-cols-3 md:flex md:flex-wrap justify-center gap-2 md:gap-4 mb-12 px-2"
         >
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`font-button uppercase tracking-wide px-6 py-2 rounded-full font-medium transition-all ${
+              className={`font-button uppercase tracking-wide px-2 py-2 md:px-6 text-xs md:text-base rounded-full font-medium transition-all ${
                 selectedCategory === category
                   ? 'bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-lg shadow-purple-500/30'
                   : 'bg-gray-100 dark:bg-white/5 text-gray-900 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-white/10 hover:text-indigo-600 dark:hover:text-white border border-gray-200 dark:border-white/10'
