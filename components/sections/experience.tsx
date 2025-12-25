@@ -148,7 +148,7 @@ export default function Experience() {
                       <div className="flex-1 min-w-0">
                         <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-1">{exp.company}</h3>
                         <p className="text-lg sm:text-xl md:text-2xl text-indigo-500 dark:text-indigo-400 font-semibold mb-2">
-                          {exp.positionKey ? t(exp.positionKey) : exp.position}
+                          {t(exp.positionKey)}
                         </p>
                         <div className="flex flex-col gap-1 text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-400">
                           <div className="flex items-center gap-2">
@@ -168,7 +168,7 @@ export default function Experience() {
 
                     {/* Description */}
                     <p className="text-base sm:text-lg md:text-xl text-gray-700 dark:text-gray-400 mb-4 leading-relaxed">
-                      {exp.descriptionKey ? t(exp.descriptionKey) : exp.description}
+                      {t(exp.descriptionKey)}
                     </p>
 
                     {/* Achievements */}
