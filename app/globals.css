@@ -91,9 +91,9 @@
   --radius-4xl: calc(var(--radius) + 16px);
 }
 
-* {
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -104,6 +104,8 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
@@ -113,12 +115,11 @@ body {
   position: relative;
 }
 
-/* Prevent horizontal scroll on all elements */
+/* Prevent horizontal scroll on main container elements only */
 #__next,
-main,
-section,
-div {
+main {
   max-width: 100vw;
+  overflow-x: hidden;
 }
 
 /* Gradient Text Effect - Using button gradient (indigo to purple) */
