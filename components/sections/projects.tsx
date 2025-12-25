@@ -382,7 +382,7 @@ export default function Projects() {
               {/* Close Button - Sticky */}
               <button
                 onClick={() => setSelectedProject(null)}
-                className="sticky top-2 left-full -ml-12 z-50 w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 flex items-center justify-center transition-all shadow-xl"
+                className="sticky top-2 left-full -ml-12 z-50 w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 flex items-center justify-center transition-all shadow-xl cursor-pointer"
                 aria-label="Fermer"
               >
                 <X size={20} className="text-white" />
