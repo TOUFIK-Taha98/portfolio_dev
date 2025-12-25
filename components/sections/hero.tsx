@@ -67,7 +67,7 @@ export default function Hero() {
           >
             <div className="bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-pink-500/10 dark:from-indigo-500/20 dark:via-purple-500/20 dark:to-pink-500/20 backdrop-blur-sm border border-indigo-200 dark:border-indigo-500/30 rounded-2xl p-6 md:p-8 shadow-lg">
               <p 
-                className="text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed font-normal"
+                className="text-base md:text-lg lg:text-2xl xl:text-3xl leading-relaxed font-normal"
                 style={{
                   fontFamily: 'var(--font-bodoni), var(--font-playfair), Georgia, "Times New Roman", serif',
                   fontWeight: 500,
