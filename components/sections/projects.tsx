@@ -165,7 +165,18 @@ const projects = [
     github: "https://github.com/TOUFIK-Taha98/Angluar-practices",
     demo: "#",
   },
-  // Projets Wordpress - E-commerce
+  // Projets Wordpress - E-commerce (triés par ordre)
+  {
+    id: 18,
+    titleKey: "projects.items.habachiya.title",
+    descriptionKey: "projects.items.habachiya.description",
+    longDescriptionKey: "projects.items.habachiya.longDescription",
+    category: "Wordpress",
+    image: "/images/habachiya.png",
+    tags: ["Wordpress", "B2B", "Huile de Nigelle", "Éthiopie"],
+    github: "#",
+    demo: "https://habachiya.com/",
+  },
   {
     id: 15,
     titleKey: "projects.items.boucherie.title",
@@ -200,15 +211,15 @@ const projects = [
     demo: "https://mazanutribeaute.fr",
   },
   {
-    id: 18,
-    titleKey: "projects.items.habachiya.title",
-    descriptionKey: "projects.items.habachiya.description",
-    longDescriptionKey: "projects.items.habachiya.longDescription",
+    id: 19,
+    titleKey: "projects.items.ecoviande.title",
+    descriptionKey: "projects.items.ecoviande.description",
+    longDescriptionKey: "projects.items.ecoviande.longDescription",
     category: "Wordpress",
-    image: "/images/habachiya.png",
-    tags: ["Wordpress", "B2B", "Huile de Nigelle", "Éthiopie"],
+    image: "/images/boucherie.jpg",
+    tags: ["Wordpress", "Site Vitrine", "Boucherie", "E-commerce"],
     github: "#",
-    demo: "https://habachiya.com/",
+    demo: "https://ecoviande.fr",
   },
 ];
 

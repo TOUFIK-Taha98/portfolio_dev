@@ -153,6 +153,11 @@
         "title": "Habachiya",
         "description": "Site grossiste spécialisé en huile de graines de nigelle d'Éthiopie et dérivés depuis 2019.",
         "longDescription": "Modification et personnalisation d'une page Wordpress pour Habachiya, grossiste partenaire privilégié pour l'huile de graines de nigelle d'Éthiopie et ses dérivés. Amélioration du design, optimisation de l'interface B2B et mise en valeur des produits naturels éthiopiens."
+      },
+      "ecoviande": {
+        "title": "Ecoviande",
+        "description": "Des viandes d'exception pour des plats mémorables. Boucherie artisanale spécialisée dans les viandes de qualité.",
+        "longDescription": "Site vitrine Wordpress pour Ecoviande, boucherie artisanale proposant des viandes d'exception. Mise en avant de la qualité, la tradition et l'expérience. Design élégant et professionnel pour valoriser le savoir-faire artisanal."
       }
     }
   },
