@@ -119,7 +119,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1 }}
-            className="flex flex-wrap items-center justify-center gap-3 max-w-3xl mx-auto mb-8"
+            className="grid grid-cols-3 md:flex md:flex-wrap items-center justify-center gap-3 max-w-3xl mx-auto mb-8"
           >
             {["WordPress", "React", "Next.js", "TypeScript", "Node.js", "Tailwind"].map((tech, index) => (
               <motion.span
@@ -127,7 +127,7 @@ export default function Hero() {
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3, delay: 1 + index * 0.1 }}
-                className="px-4 py-2 bg-gradient-to-r from-indigo-500/20 to-purple-500/20 dark:from-indigo-500/30 dark:to-purple-500/30 border border-indigo-300 dark:border-indigo-500/50 rounded-full text-sm md:text-base font-semibold text-gray-900 dark:text-white hover:scale-110 transition-transform"
+                className="px-4 py-2 bg-gradient-to-r from-indigo-500/20 to-purple-500/20 dark:from-indigo-500/30 dark:to-purple-500/30 border border-indigo-300 dark:border-indigo-500/50 rounded-full text-sm md:text-base font-semibold text-gray-900 dark:text-white hover:scale-110 transition-transform text-center"
               >
                 {tech}
               </motion.span>
