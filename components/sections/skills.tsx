@@ -139,13 +139,13 @@ export default function Skills() {
                       transition={{ duration: 0.3, delay: idx * 0.1 + skillIdx * 0.05 }}
                       className="flex items-center justify-between gap-2"
                     >
-                      <span className="text-sm sm:text-base md:text-lg lg:text-xl font-medium text-gray-700 dark:text-gray-300">
+                      <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-gray-700 dark:text-gray-300">
                         {t(`skills.${skill.name}`)}
                       </span>
                       
                       {/* Level Badge avec gradient */}
                       <span
-                        className={`rounded-full text-xs sm:text-sm md:text-base font-semibold text-white bg-gradient-to-r ${
+                        className={`rounded-full text-base sm:text-lg md:text-xl font-semibold text-white bg-gradient-to-r ${
                           levelColors[skill.level]
                         } shadow-sm whitespace-nowrap`}
                         style={{ paddingLeft: '1.25rem', paddingRight: '1.25rem', paddingTop: '0.5rem', paddingBottom: '0.5rem', marginTop: '0.5rem' }}
@@ -170,7 +170,7 @@ export default function Skills() {
         >
           <div className="inline-flex items-center gap-2 sm:gap-3 md:gap-4 px-4 sm:px-6 md:px-8 lg:px-10 py-3 sm:py-4 md:py-5 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-full border border-indigo-500/20">
             <span className="text-2xl sm:text-3xl md:text-4xl">🚀</span>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-700 dark:text-gray-300 font-medium text-center">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-700 dark:text-gray-300 font-medium text-center">
               {t("skills.learning")}
             </p>
           </div>
