@@ -49,12 +49,13 @@ export const metadata: Metadata = {
   title: "Taha TOUFIK - Ingénieur en Développement Informatique",
   description:
     "Portfolio de Taha TOUFIK, Ingénieur en développement informatique spécialisé en React.js, Next.js et WordPress. Découvrez mes projets et compétences.",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-    userScalable: true,
-  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
 };
 
 export default function RootLayout({
