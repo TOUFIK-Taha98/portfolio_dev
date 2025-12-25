@@ -339,7 +339,7 @@ export default function Projects() {
                   <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-indigo-400 transition-colors">
                     {project.titleKey ? t(project.titleKey) : project.title}
                   </h3>
-                  <p className="text-gray-800 dark:text-gray-400 text-sm md:text-base mb-4 line-clamp-3 leading-relaxed">
+                  <p className="text-gray-800 dark:text-gray-400 text-base md:text-lg mb-4 line-clamp-3 leading-relaxed">
                     {project.descriptionKey ? t(project.descriptionKey) : project.description}
                   </p>
                   <div className="flex flex-wrap gap-2">
