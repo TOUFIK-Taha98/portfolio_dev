@@ -1,0 +1,253 @@
+{
+  "nav": {
+    "home": "Home",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "theme": "Theme"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Taha TOUFIK",
+    "title": "Software Development Engineer",
+    "description": "",
+    "professional_message": "Creator of modern and intuitive web experiences, I am a passionate developer with expertise in complete web solutions. I design high-performance digital solutions that combine elegant design and quality code, transforming your ideas into intuitive applications to bring your most ambitious projects to life with measurable results.",
+    "cta_projects": "View my projects",
+    "cta_contact": "Contact me",
+    "stats": {
+      "projects": "Projects completed",
+      "clients": "Satisfied clients",
+      "experience": "Years of experience",
+      "technologies": "Technologies"
+    }
+  },
+  "skills": {
+    "title": "My",
+    "title_highlight": "Skills",
+    "subtitle": "Technologies and tools I master",
+    "learning": "Always learning and improving my skills with the latest technologies 🚀",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Tools & CMS",
+    "mobile": "Mobile",
+    "react": "React",
+    "nextjs": "Next.js",
+    "typescript": "TypeScript",
+    "tailwind": "Tailwind CSS",
+    "wordpress": "Wordpress",
+    "nodejs": "Node.js",
+    "express": "Express",
+    "postgresql": "PostgreSQL",
+    "nosql": "NoSQL",
+    "git": "Git",
+    "figma": "Figma",
+    "reactnative": "React Native",
+    "level": {
+      "senior": "Senior",
+      "intermediate": "Intermediate",
+      "junior": "Junior"
+    }
+  },
+  "levels": {
+    "senior": "Senior",
+    "intermediate": "Intermediate",
+    "junior": "Junior"
+  },
+  "projects": {
+    "title": "My",
+    "title_highlight": "Projects",
+    "subtitle": "A selection of my recent work",
+    "all": "All",
+    "fullstack": "Full Stack",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "mobile": "Mobile",
+    "wordpress": "Wordpress",
+    "view_demo": "View demo",
+    "source_code": "Source code",
+    "items": {
+      "ecommerce": {
+        "title": "E-commerce Platform",
+        "description": "Complete e-commerce platform with integrated payment, inventory management and admin dashboard.",
+        "longDescription": "Modern e-commerce application developed with Next.js and Node.js. Stripe payment integration, real-time inventory management system, and comprehensive admin interface with analytics."
+      },
+      "mobile_finance": {
+        "title": "Finance Mobile App",
+        "description": "Personal finance management mobile app with cloud sync and analytics.",
+        "longDescription": "React Native application to track expenses, create budgets and visualize finances with interactive charts. Multi-device synchronization via Firebase."
+      },
+      "dashboard": {
+        "title": "SaaS Analytics Dashboard",
+        "description": "Real-time data visualization interface with interactive charts and custom reports.",
+        "longDescription": "Modern dashboard to visualize and analyze real-time data. Interactive charts, advanced filters, PDF report export, and complete interface customization."
+      },
+      "api_restful": {
+        "title": "RESTful API Microservices",
+        "description": "Microservices architecture with RESTful API, JWT authentication and Swagger documentation.",
+        "longDescription": "Scalable backend based on microservices architecture. JWT authentication, rate limiting, automatic API documentation with Swagger, and comprehensive unit tests."
+      },
+      "social_network": {
+        "title": "Creative Social Network",
+        "description": "Social platform for creators with content sharing, messaging and like system.",
+        "longDescription": "Modern social network for creators to share content, interact with community, real-time messaging with WebSockets, and recommendation system."
+      },
+      "store_it": {
+        "title": "Store It - Cloud Storage",
+        "description": "Modern cloud storage application with file sharing and folder management.",
+        "longDescription": "Complete cloud storage solution developed with Next.js and TypeScript. Intuitive interface to manage your files, share with other users, and organize your documents securely."
+      },
+      "airbnb": {
+        "title": "Airbnb Clone",
+        "description": "Airbnb clone with booking system and accommodation search.",
+        "longDescription": "Accommodation booking application inspired by Airbnb. Advanced search, booking system, listing management and modern user interface with Next.js."
+      },
+      "trello": {
+        "title": "Trello Clone",
+        "description": "Task management application inspired by Trello with drag & drop.",
+        "longDescription": "Trello clone to create boards, lists and cards. Drag & drop system to organize tasks, collaborative management and intuitive interface."
+      },
+      "instagram": {
+        "title": "Instagram Clone",
+        "description": "Instagram clone with photo sharing and like system.",
+        "longDescription": "Social application inspired by Instagram. Photo sharing, like and comment system, news feed and user profiles with TypeScript and React."
+      },
+      "memories": {
+        "title": "Memories App",
+        "description": "Memory sharing application with storage and photo gallery.",
+        "longDescription": "Application to save and share memories. Photo gallery, descriptions, tags and chronological organization of important moments."
+      },
+      "portfolio": {
+        "title": "My Portfolio",
+        "description": "Modern personal portfolio with elegant design and smooth animations.",
+        "longDescription": "Developer portfolio with modern interface, Framer Motion animations, and responsive design. Presentation of projects, skills and professional experiences."
+      },
+      "travel": {
+        "title": "Travel UI/UX",
+        "description": "Modern travel interface with attractive design and optimal user experience.",
+        "longDescription": "Landing page for a travel application. Modern and clean design, subtle animations, destination presentation and responsive interface developed with Next.js."
+      },
+      "angular": {
+        "title": "Angular Practices",
+        "description": "Angular learning projects with various features and components.",
+        "longDescription": "Repository of Angular projects and practical exercises. Exploring framework features, reusable components and development best practices."
+      },
+      "boucherie": {
+        "title": "Boucherie La Belle Rouge",
+        "description": "E-commerce site for butcher shop with online sales and order system.",
+        "longDescription": "Wordpress/WooCommerce e-commerce site for traditional butcher shop. Product catalog, online ordering system, inventory management, and intuitive customer interface."
+      },
+      "iksiir": {
+        "title": "Iksiir",
+        "description": "Online store for natural products: black seed oil, prickly pear seed oil, incense and natural care products.",
+        "longDescription": "Wordpress e-commerce specialized in natural products and essential oils. Black seed oil, prickly pear seed oil, incense and natural care products. Elegant design, secure payment and fast delivery."
+      },
+      "mazanutri": {
+        "title": "Mazanutri Beauty",
+        "description": "Beauty e-commerce site with cosmetic products and booking system.",
+        "longDescription": "Wordpress site for beauty institute and cosmetic product sales. Product catalog, ordering system, booking integration, and beauty blog."
+      },
+      "habachiya": {
+        "title": "Habachiya",
+        "description": "Wholesale site specialized in Ethiopian black seed oil and derivatives since 2019.",
+        "longDescription": "Modification and customization of a Wordpress page for Habachiya, privileged wholesale partner for Ethiopian black seed oil and its derivatives. Design improvement, B2B interface optimization and enhancement of Ethiopian natural products."
+      }
+    }
+  },
+  "experience": {
+    "title": "My",
+    "title_highlight": "Journey",
+    "subtitle": "Companies I've had the pleasure of working with",
+    "type": {
+      "Hybrid": "Hybrid",
+      "Apprenticeship": "Apprenticeship",
+      "Internship": "Internship"
+    },
+    "items": {
+      "freelance_2024": {
+        "position": "Software Engineer",
+        "description": "Designed and developed a web-based e-commerce application in close collaboration with the client. Analyzed needs, sales process, supplier selection, and site design.",
+        "achievements": [
+          "In-depth analysis of client needs and target audience",
+          "Development of a tailored e-commerce solution",
+          "Delivery and implementation of a solution meeting project requirements"
+        ]
+      },
+      "freelance_2023": {
+        "position": "Software Engineer",
+        "description": "As a full-stack developer, I designed and deployed a website tailored to specific client project requirements with robust architecture.",
+        "achievements": [
+          "Collection of functional and technical requirements through collaborative workshops",
+          "Integration of an intuitive front-end and optimized back-end management",
+          "Delivery of a turnkey solution aligned with client challenges"
+        ]
+      },
+      "woby": {
+        "position": "Full-Stack Software Engineer",
+        "description": "Development of challenging features in an AWS environment. Optimization of displaying 10,000 collaborator images with caching and reporting system.",
+        "achievements": [
+          "Optimization of storage and loading of 1M images via S3, Lambda and API Gateway",
+          "Implementation of resizing algorithm and browser cache mechanism",
+          "Development of Reporting system with automated Excel export via AWS Lambda"
+        ]
+      },
+      "orange": {
+        "position": "Backend Developer/Analyst",
+        "description": "Optimization of internal data analysis process. Automation of data collection and visualization via Google Cloud Platform.",
+        "achievements": [
+          "Design of GCP-based solution (Cloud Functions, Cloud Scheduler)",
+          "Development of algorithm to retrieve and format data via Firebase API",
+          "Configuration of Google Data Studio for automated graphical visualization"
+        ]
+      },
+      "inria": {
+        "position": "Web Developer",
+        "description": "Web development with focus on user experience and modern interface.",
+        "achievements": [
+          "Development of user interfaces with React.js",
+          "Integration of Material-UI for consistent design",
+          "Use of REST API with Swagger and PostgreSQL"
+        ]
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "What my clients and partners say"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Have a project idea? Feel free to reach out!",
+    "stay_connected": "Let's stay in touch",
+    "intro": "I'm always open to new opportunities and interesting projects. Don't hesitate to contact me to discuss your project!",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "phone": "Phone",
+    "location": "Location",
+    "follow": "Follow me on social media",
+    "form": {
+      "name": "Full name",
+      "name_placeholder": "Your name",
+      "email": "Email",
+      "email_placeholder": "your@email.com",
+      "subject": "Subject",
+      "subject_placeholder": "What would you like to talk about?",
+      "message": "Message",
+      "message_placeholder": "Your message...",
+      "sending": "Sending...",
+      "sent": "Message sent!",
+      "send": "Send message"
+    }
+  },
+  "footer": {
+    "made_with": "Made with",
+    "and": "and"
+  },
+  "social": {
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  }
+}

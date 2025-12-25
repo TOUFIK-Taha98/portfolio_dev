@@ -1,0 +1,253 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "experience": "Expériences",
+    "testimonials": "Témoignages",
+    "contact": "Contact",
+    "theme": "Thème"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "name": "Taha TOUFIK",
+    "title": "Ingénieur en Développement Informatique",
+    "description": "",
+    "professional_message": "Créateur d'expériences web modernes et intuitives, je suis un développeur passionné avec une expertise en solutions web complètes. Je conçois des solutions digitales performantes qui allient design élégant et code de qualité, transformant vos idées en applications intuitives pour donner vie à vos projets les plus ambitieux avec des résultats mesurables.",
+    "cta_projects": "Voir mes projets",
+    "cta_contact": "Me contacter",
+    "stats": {
+      "projects": "Projets réalisés",
+      "clients": "Clients satisfaits",
+      "experience": "Ans d'expérience",
+      "technologies": "Technologies"
+    }
+  },
+  "skills": {
+    "title": "Mes",
+    "title_highlight": "Compétences",
+    "subtitle": "Technologies et outils que je maîtrise",
+    "learning": "Toujours en train d'apprendre et de m'améliorer avec les dernières technologies 🚀",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Outils & CMS",
+    "mobile": "Mobile",
+    "react": "React",
+    "wordpress": "Wordpress",
+    "nextjs": "Next.js",
+    "typescript": "TypeScript",
+    "tailwind": "Tailwind CSS",
+    "nodejs": "Node.js",
+    "express": "Express",
+    "postgresql": "PostgreSQL",
+    "nosql": "NoSQL",
+    "git": "Git",
+    "figma": "Figma",
+    "reactnative": "React Native",
+    "level": {
+      "senior": "Senior",
+      "intermediate": "Intermédiaire",
+      "junior": "Débutant"
+    }
+  },
+  "levels": {
+    "senior": "Senior",
+    "intermediate": "Intermédiaire",
+    "junior": "Junior"
+  },
+  "projects": {
+    "title": "Mes",
+    "title_highlight": "Projets",
+    "subtitle": "Une sélection de mes réalisations récentes",
+    "all": "Tous",
+    "fullstack": "Full Stack",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "mobile": "Mobile",
+    "wordpress": "Wordpress",
+    "view_demo": "Voir la démo",
+    "source_code": "Code source",
+    "items": {
+      "ecommerce": {
+        "title": "Plateforme E-commerce",
+        "description": "Une plateforme e-commerce complète avec paiement intégré, gestion des stocks et tableau de bord admin.",
+        "longDescription": "Application e-commerce moderne développée avec Next.js et Node.js. Intégration de Stripe pour les paiements, système de gestion des stocks en temps réel, et interface d'administration complète avec analytics."
+      },
+      "mobile_finance": {
+        "title": "Application Mobile Finance",
+        "description": "Application mobile de gestion financière personnelle avec synchronisation cloud et analyses.",
+        "longDescription": "Application React Native permettant de suivre ses dépenses, créer des budgets et visualiser ses finances avec des graphiques interactifs. Synchronisation multi-appareils via Firebase."
+      },
+      "dashboard": {
+        "title": "Dashboard Analytics SaaS",
+        "description": "Interface de visualisation de données en temps réel avec graphiques interactifs et rapports personnalisés.",
+        "longDescription": "Dashboard moderne pour visualiser et analyser des données en temps réel. Graphiques interactifs, filtres avancés, export de rapports PDF, et personnalisation complète de l'interface."
+      },
+      "api_restful": {
+        "title": "API RESTful Microservices",
+        "description": "Architecture microservices avec API RESTful, authentification JWT et documentation Swagger.",
+        "longDescription": "Backend scalable basé sur une architecture microservices. Authentification JWT, rate limiting, documentation API automatique avec Swagger, et tests unitaires complets."
+      },
+      "social_network": {
+        "title": "Réseau Social Créatif",
+        "description": "Plateforme sociale pour créateurs avec partage de contenu, messagerie et système de likes.",
+        "longDescription": "Réseau social moderne pour créateurs permettant de partager du contenu, interagir avec la communauté, messagerie en temps réel avec WebSockets, et système de recommandations."
+      },
+      "store_it": {
+        "title": "Store It - Cloud Storage",
+        "description": "Application de stockage cloud moderne avec partage de fichiers et gestion des dossiers.",
+        "longDescription": "Solution de stockage cloud complète développée avec Next.js et TypeScript. Interface intuitive pour gérer vos fichiers, partager avec d'autres utilisateurs, et organiser vos documents en toute sécurité."
+      },
+      "airbnb": {
+        "title": "Airbnb Clone",
+        "description": "Clone d'Airbnb avec système de réservation et recherche de logements.",
+        "longDescription": "Application de réservation de logements inspirée d'Airbnb. Recherche avancée, système de réservation, gestion des annonces et interface utilisateur moderne avec Next.js."
+      },
+      "trello": {
+        "title": "Trello Clone",
+        "description": "Application de gestion de tâches inspirée de Trello avec drag & drop.",
+        "longDescription": "Clone de Trello permettant de créer des tableaux, listes et cartes. Système de drag & drop pour organiser les tâches, gestion collaborative et interface intuitive."
+      },
+      "instagram": {
+        "title": "Instagram Clone",
+        "description": "Clone d'Instagram avec partage de photos et système de likes.",
+        "longDescription": "Application sociale inspirée d'Instagram. Partage de photos, système de likes et commentaires, fil d'actualité et profils utilisateurs avec TypeScript et React."
+      },
+      "memories": {
+        "title": "Memories App",
+        "description": "Application de partage de souvenirs avec stockage et galerie photos.",
+        "longDescription": "Application permettant de sauvegarder et partager des souvenirs. Galerie de photos, descriptions, tags et organisation chronologique des moments importants."
+      },
+      "portfolio": {
+        "title": "My Portfolio",
+        "description": "Portfolio personnel moderne avec design élégant et animations fluides.",
+        "longDescription": "Portfolio développeur avec interface moderne, animations Framer Motion, et design responsive. Présentation de projets, compétences et expériences professionnelles."
+      },
+      "travel": {
+        "title": "Travel UI/UX",
+        "description": "Interface de voyage moderne avec design attrayant et expérience utilisateur optimale.",
+        "longDescription": "Landing page pour une application de voyage. Design moderne et épuré, animations subtiles, présentation de destinations et interface responsive développée avec Next.js."
+      },
+      "angular": {
+        "title": "Angular Practices",
+        "description": "Projets d'apprentissage Angular avec différentes fonctionnalités et composants.",
+        "longDescription": "Repository de projets et exercices pratiques Angular. Exploration des fonctionnalités du framework, composants réutilisables et bonnes pratiques de développement."
+      },
+      "boucherie": {
+        "title": "Boucherie La Belle Rouge",
+        "description": "Site e-commerce pour boucherie avec vente en ligne et système de commandes.",
+        "longDescription": "Site e-commerce Wordpress/WooCommerce pour boucherie traditionnelle. Catalogue de produits, système de commande en ligne, gestion des stocks, et interface client intuitive."
+      },
+      "iksiir": {
+        "title": "Iksiir",
+        "description": "Boutique en ligne de produits naturels : huiles de nigelle, figue de barbarie, encens et soins naturels.",
+        "longDescription": "E-commerce Wordpress spécialisé dans les produits naturels et huiles essentielles. Huile de nigelle, huile de pépins de figue de barbarie, encens et produits de soin naturels. Design élégant, paiement sécurisé et livraison rapide."
+      },
+      "mazanutri": {
+        "title": "Mazanutri Beauté",
+        "description": "Site e-commerce beauté avec produits cosmétiques et système de réservation.",
+        "longDescription": "Site Wordpress pour institut de beauté et vente de produits cosmétiques. Catalogue produits, système de commande, intégration réservation, et blog beauté."
+      },
+      "habachiya": {
+        "title": "Habachiya",
+        "description": "Site grossiste spécialisé en huile de graines de nigelle d'Éthiopie et dérivés depuis 2019.",
+        "longDescription": "Modification et personnalisation d'une page Wordpress pour Habachiya, grossiste partenaire privilégié pour l'huile de graines de nigelle d'Éthiopie et ses dérivés. Amélioration du design, optimisation de l'interface B2B et mise en valeur des produits naturels éthiopiens."
+      }
+    }
+  },
+  "experience": {
+    "title": "Mon",
+    "title_highlight": "Parcours",
+    "subtitle": "Entreprises avec lesquelles j'ai eu le plaisir de collaborer",
+    "type": {
+      "Hybrid": "Hybride",
+      "Apprenticeship": "Alternance",
+      "Internship": "Stage"
+    },
+    "items": {
+      "freelance_2024": {
+        "position": "Ingénieur Logiciel",
+        "description": "Conception et développement d'une application e-commerce web en étroite collaboration avec le client. Analyse des besoins, processus de vente, sélection des fournisseurs et design du site.",
+        "achievements": [
+          "Analyse approfondie des besoins client et du public cible",
+          "Développement d'une solution e-commerce sur mesure",
+          "Livraison et implémentation d'une solution adaptée aux exigences du projet"
+        ]
+      },
+      "freelance_2023": {
+        "position": "Ingénieur Logiciel",
+        "description": "En tant que développeur full-stack, j'ai conçu et déployé un site web adapté aux exigences spécifiques d'un projet client avec une architecture robuste.",
+        "achievements": [
+          "Collecte des exigences fonctionnelles et techniques via des ateliers collaboratifs",
+          "Intégration d'un front-end intuitif et d'une gestion back-end optimisée",
+          "Livraison d'une solution clé en main alignée avec les défis du client"
+        ]
+      },
+      "woby": {
+        "position": "Ingénieur Logiciel Full-Stack",
+        "description": "Développement de fonctionnalités complexes dans un environnement AWS. Optimisation de l'affichage de 10 000 images de collaborateurs avec mise en cache et système de reporting.",
+        "achievements": [
+          "Optimisation du stockage et chargement de 1M d'images via S3, Lambda et API Gateway",
+          "Implémentation d'un algorithme de redimensionnement et mécanisme de cache navigateur",
+          "Développement du système de Reporting avec export Excel automatisé via AWS Lambda"
+        ]
+      },
+      "orange": {
+        "position": "Développeur Backend/Analyste",
+        "description": "Optimisation du processus d'analyse de données internes. Automatisation de la collecte et visualisation des données via Google Cloud Platform.",
+        "achievements": [
+          "Conception d'une solution basée sur GCP (Cloud Functions, Cloud Scheduler)",
+          "Développement d'un algorithme pour récupérer et formater les données via Firebase API",
+          "Configuration de Google Data Studio pour visualisation graphique automatisée"
+        ]
+      },
+      "inria": {
+        "position": "Développeur Web",
+        "description": "Développement web avec focus sur l'expérience utilisateur et l'interface moderne.",
+        "achievements": [
+          "Développement d'interfaces utilisateur avec React.js",
+          "Intégration de Material-UI pour un design cohérent",
+          "Utilisation d'API REST avec Swagger et PostgreSQL"
+        ]
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Témoignages",
+    "subtitle": "Ce que disent mes clients et partenaires"
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "subtitle": "Une idée de projet ? N'hésitez pas à me contacter !",
+    "stay_connected": "Restons en contact",
+    "intro": "Je suis toujours ouvert aux nouvelles opportunités et aux projets intéressants. N'hésitez pas à me contacter pour discuter de votre projet !",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "phone": "Téléphone",
+    "location": "Localisation",
+    "follow": "Suivez-moi sur les réseaux sociaux",
+    "form": {
+      "name": "Nom complet",
+      "name_placeholder": "Votre nom",
+      "email": "Email",
+      "email_placeholder": "votre@email.com",
+      "subject": "Sujet",
+      "subject_placeholder": "De quoi voulez-vous parler ?",
+      "message": "Message",
+      "message_placeholder": "Votre message...",
+      "sending": "Envoi en cours...",
+      "sent": "Message envoyé !",
+      "send": "Envoyer le message"
+    }
+  },
+  "footer": {
+    "made_with": "Fait avec",
+    "and": "et"
+  },
+  "social": {
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  }
+}
