@@ -389,37 +389,37 @@ export default function Projects() {
               </button>
 
               {/* Modal Content */}
-              <div className="p-8">
-                <div className="aspect-video rounded-xl mb-6 relative overflow-hidden">
+              <div className="p-4 sm:p-6">
+                <div className="aspect-video rounded-xl mb-4 relative overflow-hidden">
                   <Image
                     src={selectedProject.image}
                     alt={selectedProject.titleKey ? t(selectedProject.titleKey) : selectedProject.title || ''}
                     fill
                     className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 896px"
+                    sizes="(max-width: 768px) 100vw, 768px"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 </div>
 
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="text-sm font-semibold text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="text-xs font-semibold text-indigo-400 bg-indigo-500/10 px-2.5 py-0.5 rounded-full">
                     {selectedProject.category}
                   </span>
                 </div>
 
-                <h2 className="text-3xl font-bold mb-4">
+                <h2 className="text-xl sm:text-2xl font-bold mb-3">
                   {selectedProject.titleKey ? t(selectedProject.titleKey) : selectedProject.title}
                 </h2>
-                <p className="text-gray-900 dark:text-gray-400 text-lg mb-6">
+                <p className="text-gray-900 dark:text-gray-400 text-sm sm:text-base mb-4 line-clamp-3">
                   {selectedProject.longDescriptionKey ? t(selectedProject.longDescriptionKey) : selectedProject.longDescription}
                 </p>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {selectedProject.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="text-sm text-gray-900 dark:text-gray-300 bg-gray-100 dark:bg-white/10 px-3 py-1 rounded-full"
+                      className="text-xs sm:text-sm text-gray-900 dark:text-gray-300 bg-gray-100 dark:bg-white/10 px-2.5 py-0.5 rounded-full"
                     >
                       {tag}
                     </span>
