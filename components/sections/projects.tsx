@@ -382,7 +382,7 @@ export default function Projects() {
               {/* Close Button - Sticky */}
               <button
                 onClick={() => setSelectedProject(null)}
-                className="sticky top-2 left-full -ml-12 z-50 w-10 h-10 rounded-full bg-red-500 hover:bg-red-600 flex items-center justify-center transition-colors shadow-xl"
+                className="sticky top-2 left-full -ml-12 z-50 w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 flex items-center justify-center transition-all shadow-xl"
                 aria-label="Fermer"
               >
                 <X size={20} className="text-white" />
@@ -410,7 +410,7 @@ export default function Projects() {
                 <h2 className="text-xl sm:text-2xl font-bold mb-3">
                   {selectedProject.titleKey ? t(selectedProject.titleKey) : selectedProject.title}
                 </h2>
-                <p className="text-gray-900 dark:text-gray-400 text-sm sm:text-base mb-4 line-clamp-3">
+                <p className="text-gray-900 dark:text-gray-400 text-sm sm:text-base mb-4">
                   {selectedProject.longDescriptionKey ? t(selectedProject.longDescriptionKey) : selectedProject.longDescription}
                 </p>
 
