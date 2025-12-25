@@ -376,15 +376,16 @@ export default function Projects() {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="bg-zinc-900 border border-white/20 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+              className="bg-zinc-900 border border-white/20 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Close Button */}
+              {/* Close Button - Sticky */}
               <button
                 onClick={() => setSelectedProject(null)}
-                className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                className="sticky top-4 left-full -ml-14 z-50 w-10 h-10 rounded-full bg-red-500 hover:bg-red-600 flex items-center justify-center transition-colors shadow-lg"
+                aria-label="Fermer"
               >
-                <X size={20} />
+                <X size={20} className="text-white" />
               </button>
 
               {/* Modal Content */}
