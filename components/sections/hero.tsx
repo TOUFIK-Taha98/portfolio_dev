@@ -69,9 +69,9 @@ export default function Hero() {
               <p 
                 className="text-base md:text-lg lg:text-xl leading-relaxed font-normal"
                 style={{
-                  fontFamily: 'var(--font-bodoni), var(--font-playfair), Georgia, "Times New Roman", serif',
-                  fontWeight: 600,
-                  letterSpacing: '0.02em',
+                  fontFamily: 'var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                  fontWeight: 500,
+                  letterSpacing: '0.01em',
                   color: '#1f2937',
                   textShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
                   textAlign: 'justify',

@@ -167,7 +167,7 @@ export default function Experience() {
                     </div>
 
                     {/* Description */}
-                    <p className="text-base sm:text-lg md:text-xl text-gray-700 dark:text-gray-400 mb-4 leading-relaxed">
+                    <p className="text-lg sm:text-xl md:text-2xl text-gray-700 dark:text-gray-400 mb-4 leading-relaxed">
                       {t(exp.descriptionKey)}
                     </p>
 
