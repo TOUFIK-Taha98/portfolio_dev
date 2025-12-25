@@ -67,13 +67,14 @@ export default function Hero() {
           >
             <div className="bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-pink-500/10 dark:from-indigo-500/20 dark:via-purple-500/20 dark:to-pink-500/20 backdrop-blur-sm border border-indigo-200 dark:border-indigo-500/30 rounded-2xl p-6 md:p-8 shadow-lg">
               <p 
-                className="text-base md:text-lg lg:text-xl text-center leading-relaxed font-normal"
+                className="text-base md:text-lg lg:text-xl leading-relaxed font-normal"
                 style={{
                   fontFamily: 'var(--font-bodoni), var(--font-playfair), Georgia, "Times New Roman", serif',
                   fontWeight: 600,
                   letterSpacing: '0.02em',
                   color: '#1f2937',
                   textShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+                  textAlign: 'justify',
                 }}
               >
                 <span className="dark:text-white dark:drop-shadow-[0_2px_8px_rgba(99,102,241,0.5)]">

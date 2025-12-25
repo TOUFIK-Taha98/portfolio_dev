@@ -174,7 +174,7 @@ export default function Experience() {
                     {/* Achievements */}
                     <ul className="space-y-2 sm:space-y-3 mb-4">
                       {exp.achievementsKey && Array.isArray(t(exp.achievementsKey)) && (t(exp.achievementsKey) as string[]).map((achievement: string, i: number) => (
-                        <li key={i} className="flex items-start gap-2 text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300">
+                        <li key={i} className="flex items-start gap-2 text-base sm:text-lg md:text-xl text-gray-700 dark:text-gray-300">
                           <span className="text-indigo-500 dark:text-indigo-400 mt-1 font-bold">▸</span>
                           <span className="leading-relaxed">{achievement}</span>
                         </li>
