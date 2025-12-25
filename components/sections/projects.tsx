@@ -427,24 +427,26 @@ export default function Projects() {
 
                 {/* Links */}
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  {/* Demo/Project Button - Always show */}
-                  <a
-                    href={selectedProject.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-button uppercase tracking-wider flex items-center justify-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/30 transition-all"
-                  >
-                    <ExternalLink size={16} className="sm:w-[18px] sm:h-[18px]" />
-                    {selectedProject.category === "Wordpress" ? t("projects.view_project") : t("projects.view_demo")}
-                  </a>
+                  {/* WordPress projects: Show "View Project" button */}
+                  {selectedProject.category === "Wordpress" && (
+                    <a
+                      href={selectedProject.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-button uppercase tracking-wider flex items-center justify-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/30 transition-all"
+                    >
+                      <ExternalLink size={16} className="sm:w-[18px] sm:h-[18px]" />
+                      {t("projects.view_project")}
+                    </a>
+                  )}
                   
-                  {/* Source Code Button - Only for non-Wordpress projects */}
+                  {/* Non-WordPress projects: Show "Source Code" button only */}
                   {selectedProject.category !== "Wordpress" && (
                     <a
                       href={selectedProject.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-button uppercase tracking-wider flex items-center justify-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base bg-white/5 border border-white/10 rounded-full font-semibold hover:bg-white/10 transition-all"
+                      className="font-button uppercase tracking-wider flex items-center justify-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/30 transition-all"
                     >
                       <Github size={16} className="sm:w-[18px] sm:h-[18px]" />
                       {t("projects.source_code")}
