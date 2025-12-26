@@ -77,7 +77,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Taha TOUFIK" }],
   creator: "Taha TOUFIK",
   publisher: "Taha TOUFIK",
-  metadataBase: new URL('https://taha-toufik.vercel.app'),
+  metadataBase: new URL('https://tahatoufik.dev'),
   alternates: {
     canonical: '/',
     languages: {
@@ -89,7 +89,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://taha-toufik.vercel.app',
+    url: 'https://tahatoufik.dev',
     title: 'Taha TOUFIK - Création Site Web, E-commerce & Maintenance',
     description: 'Développeur web freelance expert en création de sites vitrines, e-commerce et applications web sur mesure. WordPress, React.js, Next.js. Devis gratuit.',
     siteName: 'Taha TOUFIK - Développeur Web',
@@ -129,6 +129,10 @@ export const viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#000000' }
+  ],
 };
 
 export default function RootLayout({
@@ -160,9 +164,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "Taha TOUFIK - Développeur Web Freelance",
-              "image": "https://taha-toufik.vercel.app/og-image.jpg",
+              "image": "https://tahatoufik.dev/og-image.jpg",
               "description": "Création de sites web professionnels : site vitrine, e-commerce, applications web. Expert WordPress, React.js et Next.js.",
-              "url": "https://taha-toufik.vercel.app",
+              "url": "https://tahatoufik.dev",
               "telephone": "+33766491893",
               "priceRange": "€€",
               "address": {
