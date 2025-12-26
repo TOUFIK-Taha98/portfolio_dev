@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import bcrypt from 'bcryptjs';
-import { getAdminByUsername, updateLastLogin } from '@/lib/db';
+import { authenticateUser } from '@/lib/auth-env';
 import { getSession } from '@/lib/auth';
 
 export async function POST(request: NextRequest) {
@@ -8,7 +7,7 @@ export async function POST(request: NextRequest) {
     const { username, password } = await request.json();
 
     console.log('[LOGIN] Tentative de connexion pour:', username);
-    console.log('[LOGIN] POSTGRES_URL présent:', !!process.env.POSTGRES_URL);
+    console.log('[LOGIN] Auth basée sur ENV vars');
 
     if (!username || !password) {
       console.log('[LOGIN] Erreur: username ou password manquant');
@@ -18,40 +17,21 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    console.log('[LOGIN] Recherche de l\'utilisateur dans la DB...');
-    const admin = await getAdminByUsername(username);
+    console.log('[LOGIN] Authentification...');
+    const admin = await authenticateUser(username, password);
 
     if (!admin) {
-      console.log('[LOGIN] Erreur: Utilisateur non trouvé');
+      console.log('[LOGIN] Erreur: Authentification échouée');
       return NextResponse.json(
         { error: 'Invalid credentials' },
         { status: 401 }
       );
     }
-
-    console.log('[LOGIN] Utilisateur trouvé:', admin.username);
-    console.log('[LOGIN] Hash présent:', !!admin.password);
-    console.log('[LOGIN] Vérification du mot de passe...');
-    
-    const isValidPassword = await bcrypt.compare(password, admin.password);
-    console.log('[LOGIN] Mot de passe valide:', isValidPassword);
-
-    if (!isValidPassword) {
-      console.log('[LOGIN] Erreur: Mot de passe incorrect');
-      return NextResponse.json(
-        { error: 'Invalid credentials' },
-        { status: 401 }
-      );
-    }
-
-    // Update last login
-    console.log('[LOGIN] Mise à jour du last_login...');
-    await updateLastLogin(username);
 
     // Create session
     console.log('[LOGIN] Création de la session...');
     const session = await getSession();
-    session.userId = admin.id;
+    session.userId = 1; // ID fixe pour l'admin ENV
     session.username = admin.username;
     session.email = admin.email;
     session.isLoggedIn = true;
@@ -61,7 +41,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       success: true,
       user: {
-        id: admin.id,
+        id: 1,
         username: admin.username,
         email: admin.email,
       },
