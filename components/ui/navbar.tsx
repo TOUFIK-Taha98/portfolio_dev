@@ -11,11 +11,11 @@ export default function Navbar() {
   const { t } = useLanguage();
   
   const navItems = [
-    { name: t('nav.home'), href: '#home' },
-    { name: t('nav.projects'), href: '#projects' },
-    { name: t('nav.pricing'), href: '#pricing' },
-    { name: t('nav.skills'), href: '#skills' },
-    { name: t('nav.experience'), href: '#experience' },
+    { name: t('nav.home'), href: '/' },
+    { name: t('nav.projects'), href: '/projets' },
+    { name: t('nav.pricing'), href: '/tarifs' },
+    { name: t('nav.skills'), href: '/competences' },
+    { name: t('nav.experience'), href: '/experiences' },
     { name: t('nav.blog'), href: '/blog' },
     { name: t('nav.contact'), href: '#contact' },
   ];
