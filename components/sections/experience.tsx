@@ -7,32 +7,6 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 const experiences = [
   {
-    id: 'freelance_2024',
-    company: 'Freelance',
-    logo: '💼',
-    logoUrl: null,
-    positionKey: 'experience.items.freelance_2024.position',
-    period: 'Apr 2024 - Aug 2024',
-    location: 'Île-de-France, France',
-    type: 'Hybrid',
-    descriptionKey: 'experience.items.freelance_2024.description',
-    achievementsKey: 'experience.items.freelance_2024.achievements',
-    tags: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL', 'WordPress'],
-  },
-  {
-    id: 'freelance_2023',
-    company: 'Freelance',
-    logo: '🚀',
-    logoUrl: null,
-    positionKey: 'experience.items.freelance_2023.position',
-    period: 'Sep 2023 - Jan 2024',
-    location: 'Île-de-France, France',
-    type: 'Hybrid',
-    descriptionKey: 'experience.items.freelance_2023.description',
-    achievementsKey: 'experience.items.freelance_2023.achievements',
-    tags: ['HTML', 'CSS', 'JavaScript', 'PHP', 'WordPress', 'Agile'],
-  },
-  {
     id: 'woby',
     company: 'Woby',
     logo: '🏢',
