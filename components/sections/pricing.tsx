@@ -201,7 +201,7 @@ export default function Pricing() {
                   className={`block w-full py-4 rounded-xl font-semibold transition-all duration-300 text-center ${
                     plan.popular
                       ? 'bg-gradient-to-r from-indigo-500 to-purple-500 text-white hover:shadow-lg hover:shadow-indigo-500/50'
-                      : 'bg-gray-100 dark:bg-white/10 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-white/20'
+                      : 'bg-gray-200 hover:bg-gray-300 dark:bg-white/10 dark:hover:bg-white/20 text-gray-900 dark:text-white'
                   }`}
                 >
                   {t('pricing.cta_button')}
