@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import LanguageSwitcher from './language-switcher';
 import { ThemeToggle } from './theme-toggle';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -77,8 +78,17 @@ export default function Navbar() {
             <LanguageSwitcher />
           </div>
 
-          {/* Mobile: Theme Toggle, Language Switcher & Menu Button */}
+          {/* Mobile: WhatsApp, Theme Toggle, Language Switcher & Menu Button */}
           <div className="md:hidden flex items-center gap-3 flex-shrink-0">
+            <a
+              href="https://wa.me/33766491893?text=Bonjour%2C%20je%20souhaite%20discuter%20de%20mon%20projet"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-600 hover:text-green-700 dark:text-green-400 dark:hover:text-green-300 p-2 transition-colors"
+              aria-label="WhatsApp"
+            >
+              <FaWhatsapp size={24} />
+            </a>
             <ThemeToggle />
             <LanguageSwitcher />
             <button

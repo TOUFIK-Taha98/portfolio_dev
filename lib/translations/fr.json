@@ -5,7 +5,7 @@
     "projects": "Projets",
     "experience": "Expériences",
     "pricing": "Tarifs",
-    "blog": "Blog",
+    "blog": "Articles",
     "testimonials": "Témoignages",
     "contact": "Contact",
     "theme": "Thème"
@@ -262,8 +262,8 @@
     "label": "Retour en haut"
   },
   "blog": {
-    "title": "Mon",
-    "title_highlight": "Blog",
+    "title": "Mes",
+    "title_highlight": "Articles",
     "subtitle": "Conseils, astuces et actualités sur le développement web, WordPress et l'e-commerce",
     "search_placeholder": "Rechercher un article...",
     "read_more": "Lire la suite",

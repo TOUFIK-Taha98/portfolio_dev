@@ -5,7 +5,7 @@
     "projects": "المشاريع",
     "experience": "الخبرات",
     "pricing": "الأسعار",
-    "blog": "المدونة",
+    "blog": "مقالاتي",
     "testimonials": "شهادات",
     "contact": "اتصل بنا",
     "theme": "المظهر"
@@ -262,7 +262,7 @@
     "label": "العودة إلى الأعلى"
   },
   "blog": {
-    "title": "مدونتي",
+    "title": "مقالاتي",
     "title_highlight": "",
     "subtitle": "نصائح وحيل وأخبار حول تطوير الويب وWordPress والتجارة الإلكترونية",
     "search_placeholder": "البحث عن مقال...",
