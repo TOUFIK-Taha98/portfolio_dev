@@ -4,6 +4,7 @@
     "skills": "Compétences",
     "projects": "Projets",
     "experience": "Expériences",
+    "pricing": "Tarifs",
     "testimonials": "Témoignages",
     "contact": "Contact",
     "theme": "Thème"
@@ -255,5 +256,107 @@
     "email": "Email",
     "linkedin": "LinkedIn",
     "github": "GitHub"
+  },
+  "scrollToTop": {
+    "label": "Retour en haut"
+  },
+  "pricing": {
+    "title": "Mes",
+    "title_highlight": "Tarifs",
+    "subtitle": "Des solutions adaptées à vos besoins et votre budget",
+    "popular": "Populaire",
+    "starting_from": "À partir de",
+    "per_month": "Par mois",
+    "custom_price": "Sur mesure",
+    "cta_button": "Démarrer mon projet",
+    "note": "Tous les projets incluent un support technique de 3 mois",
+    "plans": {
+      "showcase": {
+        "name": "Site Vitrine",
+        "description": "Idéal pour présenter votre entreprise ou vos services en ligne",
+        "features": [
+          "Design moderne et responsive",
+          "Jusqu'à 5 pages personnalisées",
+          "Optimisation SEO de base",
+          "Formulaire de contact",
+          "Hébergement conseillé",
+          "Formation à la gestion du site"
+        ]
+      },
+      "ecommerce": {
+        "name": "E-commerce",
+        "description": "Solution complète pour vendre vos produits en ligne",
+        "features": [
+          "Boutique en ligne complète",
+          "Gestion des produits illimitée",
+          "Paiement sécurisé intégré",
+          "Tableau de bord administrateur",
+          "Gestion des stocks",
+          "Support prioritaire 3 mois",
+          "Formation complète"
+        ]
+      },
+      "maintenance": {
+        "name": "Maintenance",
+        "description": "Prenez soin de votre site internet avec notre service de maintenance mensuel",
+        "features": [
+          "Mises à jour régulières",
+          "Sauvegardes automatiques",
+          "Surveillance de sécurité",
+          "Corrections de bugs",
+          "Support technique prioritaire",
+          "Optimisation des performances"
+        ]
+      },
+      "hourly": {
+        "name": "Accompagnement",
+        "description": "Support technique et conseils à l'heure pour vos besoins ponctuels",
+        "features": [
+          "Correction de bugs",
+          "Conseils techniques",
+          "Assistance au développement",
+          "Revue de code",
+          "Optimisation de performance",
+          "Formation personnalisée"
+        ]
+      },
+      "redesign_showcase": {
+        "name": "Refonte Site Vitrine",
+        "description": "Modernisez votre site vitrine avec un nouveau design et de meilleures performances",
+        "features": [
+          "Nouveau design moderne",
+          "Amélioration de l'UX/UI",
+          "Optimisation SEO avancée",
+          "Performance optimisée",
+          "Responsive design",
+          "Migration de contenu"
+        ]
+      },
+      "redesign_ecommerce": {
+        "name": "Refonte E-commerce",
+        "description": "Transformez votre boutique en ligne avec une refonte complète et moderne",
+        "features": [
+          "Design moderne et attractif",
+          "Optimisation du tunnel de vente",
+          "Amélioration de l'expérience utilisateur",
+          "Performance et rapidité",
+          "Migration des produits",
+          "Intégration de nouvelles fonctionnalités"
+        ]
+      },
+      "custom": {
+        "name": "Projet Sur Mesure",
+        "description": "Une solution unique adaptée à vos besoins spécifiques",
+        "features": [
+          "Analyse détaillée de vos besoins",
+          "Architecture personnalisée",
+          "Fonctionnalités illimitées",
+          "Intégrations API tierces",
+          "Évolutivité garantie",
+          "Support technique dédié",
+          "Maintenance continue"
+        ]
+      }
+    }
   }
 }

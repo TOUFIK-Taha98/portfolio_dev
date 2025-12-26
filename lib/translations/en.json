@@ -4,6 +4,7 @@
     "skills": "Skills",
     "projects": "Projects",
     "experience": "Experience",
+    "pricing": "Pricing",
     "testimonials": "Testimonials",
     "contact": "Contact",
     "theme": "Theme"
@@ -255,5 +256,107 @@
     "email": "Email",
     "linkedin": "LinkedIn",
     "github": "GitHub"
+  },
+  "scrollToTop": {
+    "label": "Back to top"
+  },
+  "pricing": {
+    "title": "My",
+    "title_highlight": "Pricing",
+    "subtitle": "Solutions tailored to your needs and budget",
+    "popular": "Popular",
+    "starting_from": "Starting from",
+    "per_month": "Per month",
+    "custom_price": "Custom",
+    "cta_button": "Start my project",
+    "note": "All projects include 3 months of technical support",
+    "plans": {
+      "showcase": {
+        "name": "Showcase Website",
+        "description": "Perfect for presenting your business or services online",
+        "features": [
+          "Modern and responsive design",
+          "Up to 5 custom pages",
+          "Basic SEO optimization",
+          "Contact form",
+          "Hosting recommendations",
+          "Site management training"
+        ]
+      },
+      "ecommerce": {
+        "name": "E-commerce",
+        "description": "Complete solution to sell your products online",
+        "features": [
+          "Full online store",
+          "Unlimited product management",
+          "Integrated secure payment",
+          "Admin dashboard",
+          "Inventory management",
+          "Priority support 3 months",
+          "Complete training"
+        ]
+      },
+      "maintenance": {
+        "name": "Maintenance",
+        "description": "Take care of your website with our monthly maintenance service",
+        "features": [
+          "Regular updates",
+          "Automatic backups",
+          "Security monitoring",
+          "Bug fixes",
+          "Priority technical support",
+          "Performance optimization"
+        ]
+      },
+      "hourly": {
+        "name": "Coaching",
+        "description": "Technical support and advice by the hour for your specific needs",
+        "features": [
+          "Bug fixes",
+          "Technical advice",
+          "Development assistance",
+          "Code review",
+          "Performance optimization",
+          "Personalized training"
+        ]
+      },
+      "redesign_showcase": {
+        "name": "Showcase Redesign",
+        "description": "Modernize your showcase website with a new design and better performance",
+        "features": [
+          "Modern new design",
+          "UX/UI improvement",
+          "Advanced SEO optimization",
+          "Optimized performance",
+          "Responsive design",
+          "Content migration"
+        ]
+      },
+      "redesign_ecommerce": {
+        "name": "E-commerce Redesign",
+        "description": "Transform your online store with a complete and modern redesign",
+        "features": [
+          "Modern and attractive design",
+          "Sales funnel optimization",
+          "User experience improvement",
+          "Performance and speed",
+          "Product migration",
+          "New features integration"
+        ]
+      },
+      "custom": {
+        "name": "Custom Project",
+        "description": "A unique solution tailored to your specific needs",
+        "features": [
+          "Detailed needs analysis",
+          "Custom architecture",
+          "Unlimited features",
+          "Third-party API integrations",
+          "Guaranteed scalability",
+          "Dedicated technical support",
+          "Continuous maintenance"
+        ]
+      }
+    }
   }
 }
