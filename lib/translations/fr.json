@@ -5,6 +5,7 @@
     "projects": "Projets",
     "experience": "Expériences",
     "pricing": "Tarifs",
+    "blog": "Blog",
     "testimonials": "Témoignages",
     "contact": "Contact",
     "theme": "Thème"
@@ -259,6 +260,42 @@
   },
   "scrollToTop": {
     "label": "Retour en haut"
+  },
+  "blog": {
+    "title": "Mon",
+    "title_highlight": "Blog",
+    "subtitle": "Conseils, astuces et actualités sur le développement web, WordPress et l'e-commerce",
+    "search_placeholder": "Rechercher un article...",
+    "read_more": "Lire la suite",
+    "no_results": "Aucun article trouvé",
+    "posts": {
+      "wordpress_2025": {
+        "title": "Pourquoi choisir WordPress en 2025 pour votre site web ?",
+        "excerpt": "WordPress reste le CMS le plus populaire au monde. Découvrez pourquoi il est toujours le meilleur choix pour créer votre site vitrine ou e-commerce en 2025."
+      },
+      "ecommerce_trends": {
+        "title": "Les tendances e-commerce incontournables en 2025",
+        "excerpt": "Le commerce en ligne évolue rapidement. Explorez les dernières tendances qui transformeront votre boutique en ligne et augmenteront vos ventes."
+      },
+      "seo_optimization": {
+        "title": "Comment optimiser le SEO de votre site web en 2025",
+        "excerpt": "Positionnez votre site en première page Google avec ces techniques SEO éprouvées. Guide complet pour améliorer votre référencement naturel."
+      }
+    },
+    "articles": {
+      "wordpress_2025": {
+        "title": "Pourquoi choisir WordPress en 2025 pour votre site web ?",
+        "content": "<h2>WordPress : Le leader incontesté des CMS</h2><p>En 2025, WordPress continue de dominer le marché des systèmes de gestion de contenu avec plus de 43% des sites web mondiaux. Cette popularité n'est pas un hasard, mais le résultat d'années d'innovation et d'amélioration continue.</p><h2>Les avantages de WordPress pour votre entreprise</h2><h3>1. Facilité d'utilisation</h3><p>WordPress est conçu pour être accessible à tous, même sans compétences techniques. Son interface intuitive permet de créer et gérer du contenu facilement, ce qui vous fait gagner du temps et de l'argent.</p><h3>2. Flexibilité et personnalisation</h3><p>Avec plus de 60 000 plugins et des milliers de thèmes, WordPress s'adapte à tous vos besoins : site vitrine, e-commerce, blog, portfolio, et bien plus encore.</p><h3>3. SEO-friendly par nature</h3><p>WordPress est optimisé pour le référencement naturel dès l'installation. Avec des plugins comme Yoast SEO ou Rank Math, vous pouvez facilement améliorer votre visibilité sur Google.</p><h3>4. Sécurité renforcée</h3><p>Les mises à jour régulières et une large communauté garantissent la sécurité de votre site. Des plugins de sécurité comme Wordfence protègent contre les menaces.</p><h3>5. Évolutivité</h3><p>Que vous démarriez avec un petit site ou que vous ayez un grand e-commerce, WordPress évolue avec votre entreprise sans nécessiter de refonte complète.</p><h2>WordPress pour l'e-commerce : WooCommerce</h2><p>WooCommerce transforme WordPress en une puissante plateforme e-commerce. Avec plus de 5 millions d'installations actives, c'est la solution idéale pour vendre en ligne.</p><h2>Conclusion</h2><p>En 2025, WordPress reste le meilleur choix pour créer votre présence en ligne. Sa flexibilité, sa facilité d'utilisation et son écosystème riche en font un investissement sûr pour votre entreprise.</p><p><strong>Besoin d'un site WordPress professionnel ?</strong> Je peux vous aider à créer un site vitrine ou e-commerce sur mesure, optimisé pour la performance et le SEO.</p>"
+      },
+      "ecommerce_trends": {
+        "title": "Les tendances e-commerce incontournables en 2025",
+        "content": "<h2>L'e-commerce en constante évolution</h2><p>Le commerce en ligne connaît une croissance explosive. En 2025, de nouvelles tendances transforment la façon dont les consommateurs achètent en ligne. Découvrez les stratégies essentielles pour rester compétitif.</p><h2>1. L'Intelligence Artificielle au service du client</h2><p>Les chatbots IA offrent un service client 24/7, répondent instantanément aux questions et recommandent des produits personnalisés. Cette technologie améliore l'expérience utilisateur et augmente les conversions.</p><h2>2. Le commerce social (Social Commerce)</h2><p>Instagram, Facebook et TikTok Shop permettent d'acheter directement depuis les réseaux sociaux. Cette tendance réduit les frictions dans le parcours d'achat et touche de nouveaux clients.</p><h2>3. La personnalisation avancée</h2><p>Les clients attendent des expériences personnalisées. Les recommandations basées sur l'historique d'achat, les emails personnalisés et les promotions ciblées augmentent significativement les ventes.</p><h2>4. Le paiement en plusieurs fois</h2><p>Les solutions comme Klarna ou Alma permettent de payer en 3 ou 4 fois sans frais. Cette option augmente le panier moyen de 30% en moyenne.</p><h2>5. La réalité augmentée (AR)</h2><p>Essayer virtuellement des produits avant l'achat réduit les retours et augmente la confiance. Des secteurs comme la mode, la décoration et la beauté adoptent massivement l'AR.</p><h2>6. La livraison ultra-rapide</h2><p>Les clients veulent leur commande rapidement. La livraison le jour même ou le lendemain devient un standard qui influence directement les décisions d'achat.</p><h2>7. La durabilité et l'éco-responsabilité</h2><p>Les consommateurs privilégient les marques engagées. Mettre en avant vos pratiques écologiques et vos produits durables devient un avantage compétitif majeur.</p><h2>Comment implémenter ces tendances ?</h2><p>Vous n'avez pas besoin de tout faire en même temps. Commencez par analyser votre audience et intégrez progressivement les tendances les plus pertinentes pour votre business.</p><h2>Conclusion</h2><p>L'e-commerce en 2025 est centré sur l'expérience client, la personnalisation et l'innovation technologique. Adoptez ces tendances pour rester compétitif et augmenter vos ventes.</p><p><strong>Besoin d'une boutique en ligne performante ?</strong> Je crée des sites e-commerce modernes et optimisés qui intègrent ces dernières tendances.</p>"
+      },
+      "seo_optimization": {
+        "title": "Comment optimiser le SEO de votre site web en 2025",
+        "content": "<h2>Le SEO : Votre meilleur investissement marketing</h2><p>Le référencement naturel (SEO) reste le canal d'acquisition le plus rentable en 2025. Contrairement à la publicité payante, le SEO génère du trafic qualifié sur le long terme sans coûts récurrents.</p><h2>Les fondamentaux du SEO en 2025</h2><h3>1. L'optimisation technique</h3><p><strong>Vitesse de chargement :</strong> Un site rapide (moins de 3 secondes) améliore l'expérience utilisateur et votre classement Google. Utilisez des outils comme PageSpeed Insights pour identifier les points à améliorer.</p><p><strong>Mobile-first :</strong> Google indexe en priorité la version mobile de votre site. Un design responsive est obligatoire.</p><p><strong>HTTPS :</strong> La sécurité est un critère de classement. Installez un certificat SSL sur votre site.</p><h3>2. Le contenu de qualité</h3><p><strong>Créez du contenu utile :</strong> Répondez aux questions de votre audience. Des articles détaillés (plus de 1000 mots) performent mieux.</p><p><strong>Utilisez les mots-clés intelligemment :</strong> Recherchez les termes que vos clients utilisent et intégrez-les naturellement dans vos contenus.</p><p><strong>Mettez à jour régulièrement :</strong> Google favorise les sites qui publient du contenu frais. Un blog actif booste votre SEO.</p><h3>3. Les backlinks (liens entrants)</h3><p>Les liens depuis d'autres sites vers le vôtre sont un signal fort de qualité pour Google. Obtenez des backlinks en créant du contenu remarquable, en participant à des interviews, ou en collaborant avec d'autres entreprises.</p><h3>4. L'expérience utilisateur (UX)</h3><p><strong>Navigation intuitive :</strong> Les visiteurs doivent trouver facilement ce qu'ils cherchent.</p><p><strong>Réduisez le taux de rebond :</strong> Un contenu engageant et pertinent garde les visiteurs sur votre site.</p><p><strong>Call-to-actions clairs :</strong> Guidez vos visiteurs vers l'action que vous souhaitez (achat, contact, inscription).</p><h3>5. Le SEO local</h3><p>Pour les entreprises locales, optimisez votre fiche Google Business Profile, collectez des avis clients, et créez du contenu géolocalisé.</p><h2>Les erreurs SEO à éviter</h2><ul><li>Dupliquer du contenu depuis d'autres sites</li><li>Sur-optimiser avec trop de mots-clés (keyword stuffing)</li><li>Ignorer les balises meta (title, description)</li><li>Négliger la structure des URLs</li><li>Avoir un site sans sitemap XML</li></ul><h2>Mesurer vos résultats</h2><p>Utilisez Google Analytics et Google Search Console pour suivre vos performances : trafic organique, positions dans les résultats, taux de clics, et conversions.</p><h2>Conclusion</h2><p>Le SEO demande du temps et de la patience, mais les résultats en valent la peine. Un site bien optimisé génère du trafic qualifié pendant des années.</p><p><strong>Besoin d'aide pour votre SEO ?</strong> Je crée des sites web optimisés pour Google dès la conception, et je peux auditer votre site actuel pour identifier les opportunités d'amélioration.</p>"
+      }
+    }
   },
   "pricing": {
     "title": "Mes",

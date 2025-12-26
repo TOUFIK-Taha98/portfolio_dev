@@ -5,6 +5,7 @@
     "projects": "Projects",
     "experience": "Experience",
     "pricing": "Pricing",
+    "blog": "Blog",
     "testimonials": "Testimonials",
     "contact": "Contact",
     "theme": "Theme"
@@ -259,6 +260,28 @@
   },
   "scrollToTop": {
     "label": "Back to top"
+  },
+  "blog": {
+    "title": "My",
+    "title_highlight": "Blog",
+    "subtitle": "Tips, tricks and news about web development, WordPress and e-commerce",
+    "search_placeholder": "Search articles...",
+    "read_more": "Read more",
+    "no_results": "No articles found",
+    "posts": {
+      "wordpress_2025": {
+        "title": "Why choose WordPress in 2025 for your website?",
+        "excerpt": "WordPress remains the world's most popular CMS. Discover why it's still the best choice for creating your showcase or e-commerce site in 2025."
+      },
+      "ecommerce_trends": {
+        "title": "Essential e-commerce trends in 2025",
+        "excerpt": "Online commerce is evolving rapidly. Explore the latest trends that will transform your online store and boost your sales."
+      },
+      "seo_optimization": {
+        "title": "How to optimize your website's SEO in 2025",
+        "excerpt": "Rank your site on Google's first page with these proven SEO techniques. Complete guide to improve your organic search ranking."
+      }
+    }
   },
   "pricing": {
     "title": "My",

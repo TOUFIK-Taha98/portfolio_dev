@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, Github, X, Layers, Globe, Database, Smartphone } from "lucide-react";
 import Image from "next/image";
@@ -256,6 +257,31 @@ export default function Projects() {
   const [selectedProject, setSelectedProject] = useState<
     (typeof projects)[0] | null
   >(null);
+  const [mounted, setMounted] = useState(false);
+
+  // Marquer le composant comme monté (pour le portal)
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Bloquer le scroll du body et html quand le modal est ouvert
+  useEffect(() => {
+    if (selectedProject) {
+      document.documentElement.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
+      document.body.style.paddingRight = '0px'; // Éviter le saut de layout
+    } else {
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
+    }
+    
+    return () => {
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
+    };
+  }, [selectedProject]);
 
   const filteredProjects =
     selectedCategory === "Tous"
@@ -373,21 +399,21 @@ export default function Projects() {
         </motion.div>
       </div>
 
-      {/* Project Modal */}
-      <AnimatePresence>
-        {selectedProject && (
+      {/* Project Modal - Rendu dans un portal au niveau du body */}
+      {mounted && selectedProject && createPortal(
+        <AnimatePresence>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+            className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
             onClick={() => setSelectedProject(null)}
           >
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="bg-zinc-900 border border-white/20 rounded-2xl max-w-3xl w-full max-h-[80vh] overflow-y-auto relative"
+              className="bg-white dark:bg-zinc-900 border border-gray-200 dark:border-white/20 rounded-2xl max-w-3xl w-full max-h-[80vh] overflow-y-auto relative"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Close Button - Sticky */}
@@ -418,19 +444,32 @@ export default function Projects() {
                   </span>
                 </div>
 
-                <h2 className="text-xl sm:text-2xl font-bold mb-3">
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">
                   {selectedProject.titleKey ? t(selectedProject.titleKey) : selectedProject.title}
                 </h2>
-                <p className="text-gray-900 dark:text-gray-400 text-sm sm:text-base mb-4">
+                <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base mb-4">
                   {selectedProject.longDescriptionKey ? t(selectedProject.longDescriptionKey) : selectedProject.longDescription}
                 </p>
+
+                {/* Avis Client - Section temporaire */}
+                <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border border-indigo-500/20 rounded-xl p-4 mb-4">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-lg">💬</span>
+                    <h3 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white">
+                      Avis du client
+                    </h3>
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base italic">
+                    "Avis client en attente - Le client partagera bientôt son retour d'expérience sur ce projet."
+                  </p>
+                </div>
 
                 {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {selectedProject.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="text-xs sm:text-sm text-gray-900 dark:text-gray-300 bg-gray-100 dark:bg-white/10 px-2.5 py-0.5 rounded-full"
+                      className="text-xs sm:text-sm text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-white/10 px-2.5 py-0.5 rounded-full"
                     >
                       {tag}
                     </span>
@@ -468,8 +507,9 @@ export default function Projects() {
               </div>
             </motion.div>
           </motion.div>
-        )}
-      </AnimatePresence>
+        </AnimatePresence>,
+        document.body
+      )}
     </section>
   );
 }

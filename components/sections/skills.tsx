@@ -145,10 +145,10 @@ export default function Skills() {
                       
                       {/* Level Badge avec gradient */}
                       <span
-                        className={`rounded-full text-base sm:text-lg md:text-xl lg:text-sm xl:text-base font-semibold text-white bg-gradient-to-r ${
+                        className={`rounded-full text-xs sm:text-sm md:text-base lg:text-xs xl:text-sm font-semibold text-white bg-gradient-to-r ${
                           levelColors[skill.level]
                         } shadow-sm whitespace-nowrap`}
-                        style={{ paddingLeft: '1.25rem', paddingRight: '1.25rem', paddingTop: '0.5rem', paddingBottom: '0.5rem', marginTop: '0.5rem' }}
+                        style={{ paddingLeft: '0.75rem', paddingRight: '0.75rem', paddingTop: '0.375rem', paddingBottom: '0.375rem' }}
                       >
                         {levelLabel(skill.level)}
                       </span>

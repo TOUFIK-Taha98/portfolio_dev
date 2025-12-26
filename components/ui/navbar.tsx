@@ -16,6 +16,7 @@ export default function Navbar() {
     { name: t('nav.pricing'), href: '#pricing' },
     { name: t('nav.skills'), href: '#skills' },
     { name: t('nav.experience'), href: '#experience' },
+    { name: t('nav.blog'), href: '/blog' },
     { name: t('nav.contact'), href: '#contact' },
   ];
   const [isScrolled, setIsScrolled] = useState(false);
