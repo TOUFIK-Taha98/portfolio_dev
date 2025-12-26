@@ -13,6 +13,7 @@ export default function Navbar() {
   const navItems = [
     { name: t('nav.home'), href: '#home' },
     { name: t('nav.projects'), href: '#projects' },
+    { name: t('nav.pricing'), href: '#pricing' },
     { name: t('nav.skills'), href: '#skills' },
     { name: t('nav.experience'), href: '#experience' },
     { name: t('nav.contact'), href: '#contact' },
@@ -75,8 +76,9 @@ export default function Navbar() {
             <LanguageSwitcher />
           </div>
 
-          {/* Mobile: Language Switcher & Menu Button */}
-          <div className="md:hidden flex items-center gap-3 flex-shrink-0 rtl:flex-row-reverse">
+          {/* Mobile: Theme Toggle, Language Switcher & Menu Button */}
+          <div className="md:hidden flex items-center gap-3 flex-shrink-0">
+            <ThemeToggle />
             <LanguageSwitcher />
             <button
               className="text-gray-900 dark:text-white p-2"
@@ -113,14 +115,6 @@ export default function Navbar() {
                   {item.name}
                 </motion.a>
               ))}
-              
-              {/* Theme Toggle in Mobile Menu */}
-              <div className="flex items-center gap-4 pt-4 mt-4 border-t border-gray-200 dark:border-white/10 px-4">
-                <span className="text-sm text-gray-600 dark:text-gray-400">
-                  {t('nav.theme')}
-                </span>
-                <ThemeToggle />
-              </div>
             </div>
           </motion.div>
         )}
