@@ -52,7 +52,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 gap-4">
           {/* Logo */}
           <motion.a
-            href="#home"
+            href={`/${currentLocale}`}
             className="font-logo text-xl md:text-2xl font-bold gradient-text flex-shrink-0"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
