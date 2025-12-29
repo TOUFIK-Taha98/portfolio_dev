@@ -172,6 +172,20 @@
     "title": "Mon",
     "title_highlight": "Parcours",
     "subtitle": "Entreprises avec lesquelles j'ai eu le plaisir de collaborer",
+    "months": {
+      "Jan": "Jan",
+      "Feb": "Fév",
+      "Mar": "Mar",
+      "Apr": "Avr",
+      "May": "Mai",
+      "Jun": "Juin",
+      "Jul": "Juil",
+      "Aug": "Août",
+      "Sep": "Sep",
+      "Oct": "Oct",
+      "Nov": "Nov",
+      "Dec": "Déc"
+    },
     "type": {
       "Hybrid": "Hybride",
       "Apprenticeship": "Alternance",

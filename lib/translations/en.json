@@ -172,6 +172,20 @@
     "title": "My",
     "title_highlight": "Journey",
     "subtitle": "Companies I've had the pleasure of working with",
+    "months": {
+      "Jan": "Jan",
+      "Feb": "Feb",
+      "Mar": "Mar",
+      "Apr": "Apr",
+      "May": "May",
+      "Jun": "Jun",
+      "Jul": "Jul",
+      "Aug": "Aug",
+      "Sep": "Sep",
+      "Oct": "Oct",
+      "Nov": "Nov",
+      "Dec": "Dec"
+    },
     "type": {
       "Hybrid": "Hybrid",
       "Apprenticeship": "Apprenticeship",

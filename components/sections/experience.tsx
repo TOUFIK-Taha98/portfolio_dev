@@ -50,6 +50,19 @@ const experiences = [
 export default function Experience() {
   const { t } = useLanguage();
   
+  // Function to translate date periods
+  const translatePeriod = (period: string): string => {
+    // Split period by " - " to get start and end dates
+    const parts = period.split(' - ');
+    return parts.map(datePart => {
+      // Split each date part by space to get month and year
+      const [month, year] = datePart.split(' ');
+      // Translate the month if it exists in translations
+      const translatedMonth = t(`experience.months.${month}`) || month;
+      return `${translatedMonth} ${year}`;
+    }).join(' - ');
+  };
+  
   return (
     <section id="experience" className="relative flex items-center justify-center bg-white/[0.02] py-12 sm:py-16 md:py-20 lg:py-24">
       <div className="w-full max-w-7xl mx-auto relative z-10" style={{ padding: '0.2rem', paddingTop: '2rem' }}>
@@ -127,7 +140,7 @@ export default function Experience() {
                         <div className="flex flex-col gap-1 text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-400">
                           <div className="flex items-center gap-2">
                             <Calendar size={18} />
-                            <span>{exp.period}</span>
+                            <span>{translatePeriod(exp.period)}</span>
                             {exp.type && <span className="text-sm md:text-base bg-white/10 px-3 py-1 rounded-full">{t(`experience.type.${exp.type}`)}</span>}
                           </div>
                           {exp.location && (
