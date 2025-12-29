@@ -10,6 +10,7 @@ import {
 import "../globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ThemeProvider } from "@/components/theme-provider";
+import { getTranslations } from "@/lib/get-translations";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,14 +46,18 @@ const bodoni = Bodoni_Moda({
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-export const metadata: Metadata = {
-  title: {
-    default: "Taha TOUFIK - Création Site Web, E-commerce & Maintenance | Développeur Web Freelance",
-    template: "%s | Taha TOUFIK - Développeur Web"
-  },
-  description:
-    "Création de sites web professionnels : site vitrine à partir de 799€, e-commerce dès 1299€, maintenance 99€/mois. Développeur web freelance expert WordPress, React.js et Next.js. Accompagnement 20€/h. Devis gratuit.",
-  keywords: [
+// Generate metadata dynamically based on locale
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations(locale);
+  
+  return {
+    title: {
+      default: t.meta.title,
+      template: t.meta.titleTemplate
+    },
+    description: t.meta.description,
+    keywords: [
     "création site web",
     "développeur web freelance",
     "site vitrine",
@@ -119,10 +124,11 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: 'S7VXF8X2KK',
-  },
-};
+    verification: {
+      google: 'S7VXF8X2KK',
+    },
+  };
+}
 
 export const viewport = {
   width: "device-width",

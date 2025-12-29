@@ -4,6 +4,50 @@ import type { NextRequest } from 'next/server';
 const locales = ['fr', 'en', 'ar'];
 const defaultLocale = 'fr';
 
+// Arabic-speaking countries
+const arabicCountries = [
+  'SA', // Saudi Arabia
+  'AE', // United Arab Emirates
+  'EG', // Egypt
+  'MA', // Morocco
+  'DZ', // Algeria
+  'TN', // Tunisia
+  'LY', // Libya
+  'SD', // Sudan
+  'IQ', // Iraq
+  'YE', // Yemen
+  'SY', // Syria
+  'JO', // Jordan
+  'LB', // Lebanon
+  'KW', // Kuwait
+  'OM', // Oman
+  'QA', // Qatar
+  'BH', // Bahrain
+  'PS', // Palestine
+  'MR', // Mauritania
+  'SO', // Somalia
+  'DJ', // Djibouti
+  'KM', // Comoros
+];
+
+// English-speaking countries (major ones)
+const englishCountries = [
+  'US', // United States
+  'GB', // United Kingdom
+  'CA', // Canada
+  'AU', // Australia
+  'NZ', // New Zealand
+  'IE', // Ireland
+  'ZA', // South Africa
+  'IN', // India
+  'PK', // Pakistan
+  'NG', // Nigeria
+  'KE', // Kenya
+  'GH', // Ghana
+  'UG', // Uganda
+  'ZW', // Zimbabwe
+];
+
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
@@ -36,14 +80,60 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // For root path, redirect to default locale
-  if (pathname === '/') {
-    return NextResponse.redirect(new URL(`/${defaultLocale}`, request.url));
+  // Detect locale based on geolocation and browser preferences
+  function getPreferredLocale(): string {
+    // Check if user already has a preferred language cookie
+    const savedLocale = request.cookies.get('preferred-language')?.value;
+    if (savedLocale && locales.includes(savedLocale)) {
+      return savedLocale;
+    }
+
+    // Try to get country from Vercel's geolocation headers
+    // Vercel automatically adds this header when deployed
+    const country = request.headers.get('x-vercel-ip-country');
+    
+    if (country) {
+      // Check if it's an Arabic-speaking country
+      if (arabicCountries.includes(country)) {
+        return 'ar';
+      }
+      // Check if it's an English-speaking country
+      if (englishCountries.includes(country)) {
+        return 'en';
+      }
+    }
+
+    // Fallback to Accept-Language header
+    const acceptLanguage = request.headers.get('accept-language');
+    if (acceptLanguage) {
+      // Parse Accept-Language header (e.g., "en-US,en;q=0.9,fr;q=0.8")
+      const languages = acceptLanguage.split(',').map(lang => {
+        const [code] = lang.trim().split(';')[0].split('-');
+        return code.toLowerCase();
+      });
+
+      // Check if preferred language is in our supported locales
+      for (const lang of languages) {
+        if (lang === 'ar' || lang === 'en' || lang === 'fr') {
+          return lang;
+        }
+      }
+    }
+
+    // Default to French
+    return defaultLocale;
   }
 
-  // For any other path without locale, redirect to default locale
+  // For root path, redirect to detected locale
+  if (pathname === '/') {
+    const preferredLocale = getPreferredLocale();
+    return NextResponse.redirect(new URL(`/${preferredLocale}`, request.url));
+  }
+
+  // For any other path without locale, redirect to detected locale
   if (!pathnameHasLocale) {
-    return NextResponse.redirect(new URL(`/${defaultLocale}${pathname}`, request.url));
+    const preferredLocale = getPreferredLocale();
+    return NextResponse.redirect(new URL(`/${preferredLocale}${pathname}`, request.url));
   }
 
   return NextResponse.next();

@@ -1,4 +1,9 @@
 {
+  "meta": {
+    "title": "Taha TOUFIK - Website Creation, E-commerce & Maintenance | Freelance Web Developer",
+    "description": "Professional website creation: showcase site from €799, e-commerce from €1299, maintenance €99/month. Freelance web developer expert in WordPress, React.js and Next.js. Support €20/h. Free quote.",
+    "titleTemplate": "%s | Taha TOUFIK - Web Developer"
+  },
   "nav": {
     "home": "Home",
     "skills": "Skills",

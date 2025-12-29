@@ -1,4 +1,9 @@
 {
+  "meta": {
+    "title": "Taha TOUFIK - Création Site Web, E-commerce & Maintenance | Développeur Web Freelance",
+    "description": "Création de sites web professionnels : site vitrine à partir de 799€, e-commerce dès 1299€, maintenance 99€/mois. Développeur web freelance expert WordPress, React.js et Next.js. Accompagnement 20€/h. Devis gratuit.",
+    "titleTemplate": "%s | Taha TOUFIK - Développeur Web"
+  },
   "nav": {
     "home": "Accueil",
     "skills": "Compétences",
