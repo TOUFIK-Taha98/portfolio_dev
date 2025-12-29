@@ -8,7 +8,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 const CURRENCY_RATES = {
   EUR: 1,
   USD: 1.09, // 1 EUR = 1.09 USD
-  SAR: 4.08, // 1 EUR = 4.08 SAR
+  SAR: 4.00, // 1 EUR = 4.00 SAR (arrondi pour avoir des prix ronds en SAR)
 };
 
 // Symboles de devises
