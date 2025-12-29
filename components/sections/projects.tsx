@@ -7,6 +7,21 @@ import { ExternalLink, Github, X, Layers, Globe, Database, Smartphone } from "lu
 import Image from "next/image";
 import { useLanguage } from "@/contexts/LanguageContext";
 
+// Helper function to convert tag to translation key
+const tagToKey = (tag: string): string => {
+  return tag
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "") // Supprime tous les accents
+    .replace(/\s+/g, '_')
+    .replace(/\./g, '')
+    .replace(/&/g, '')
+    .replace(/-/g, '_')
+    .replace(/\//g, '_')
+    .replace(/'/g, '')
+    .trim();
+};
+
 const projects = [
   {
     id: 1,
@@ -188,6 +203,7 @@ const projects = [
     tags: ["Wordpress", "WooCommerce", "E-commerce", "PHP"],
     github: "#",
     demo: "https://www.boucherielabellerouge.fr",
+    clientTestimonialKey: "clientTestimonials.boucherie",
   },
   {
     id: 16,
@@ -199,6 +215,7 @@ const projects = [
     tags: ["Wordpress", "WooCommerce", "E-commerce", "Produits Naturels"],
     github: "#",
     demo: "https://iksiir.com",
+    clientTestimonialKey: "clientTestimonials.iksiir",
   },
   {
     id: 17,
@@ -385,7 +402,7 @@ export default function Projects() {
                         key={tag}
                         className="text-sm md:text-base text-gray-900 dark:text-gray-500 bg-gray-100 dark:bg-white/5 px-3 py-1.5 rounded-full"
                       >
-                        {tag}
+                        {t(`tags.${tagToKey(tag)}`)}
                       </span>
                     ))}
                   </div>
@@ -451,18 +468,20 @@ export default function Projects() {
                   {selectedProject.longDescriptionKey ? t(selectedProject.longDescriptionKey) : selectedProject.longDescription}
                 </p>
 
-                {/* Avis Client - Section temporaire */}
-                <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border border-indigo-500/20 rounded-xl p-4 mb-4">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-lg">💬</span>
-                    <h3 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white">
-                      Avis du client
-                    </h3>
+                {/* Avis Client */}
+                {selectedProject.clientTestimonialKey && (
+                  <div className="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border border-indigo-500/20 rounded-xl p-4 mb-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-lg">💬</span>
+                      <h3 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white">
+                        {t("nav.testimonials")}
+                      </h3>
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base italic">
+                      "{t(selectedProject.clientTestimonialKey)}"
+                    </p>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base italic">
-                    "Avis client en attente - Le client partagera bientôt son retour d'expérience sur ce projet."
-                  </p>
-                </div>
+                )}
 
                 {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -471,7 +490,7 @@ export default function Projects() {
                       key={tag}
                       className="text-xs sm:text-sm text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-white/10 px-2.5 py-0.5 rounded-full"
                     >
-                      {tag}
+                      {t(`tags.${tagToKey(tag)}`)}
                     </span>
                   ))}
                 </div>

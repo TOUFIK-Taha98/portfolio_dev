@@ -4,20 +4,27 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
+import { usePathname } from 'next/navigation';
 import LanguageSwitcher from './language-switcher';
 import { ThemeToggle } from './theme-toggle';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Navbar() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const pathname = usePathname();
+  
+  // Extract locale from pathname
+  const pathSegments = pathname.split('/').filter(Boolean);
+  const currentLocale = ['fr', 'en', 'ar'].includes(pathSegments[0]) ? pathSegments[0] : 'fr';
+  const localePrefix = currentLocale === 'fr' ? '' : `/${currentLocale}`;
   
   const navItems = [
-    { name: t('nav.home'), href: '/' },
-    { name: t('nav.projects'), href: '/projets' },
-    { name: t('nav.pricing'), href: '/tarifs' },
-    { name: t('nav.skills'), href: '/competences' },
-    { name: t('nav.experience'), href: '/experiences' },
-    { name: t('nav.blog'), href: '/blog' },
+    { name: t('nav.home'), href: `${localePrefix}/` },
+    { name: t('nav.projects'), href: `${localePrefix}/projets` },
+    { name: t('nav.pricing'), href: `${localePrefix}/tarifs` },
+    { name: t('nav.skills'), href: `${localePrefix}/competences` },
+    { name: t('nav.experience'), href: `${localePrefix}/experiences` },
+    { name: t('nav.blog'), href: `${localePrefix}/blog` },
     { name: t('nav.contact'), href: '#contact' },
   ];
   const [isScrolled, setIsScrolled] = useState(false);

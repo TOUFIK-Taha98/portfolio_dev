@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { usePathname, useRouter } from 'next/navigation';
 import { Globe } from 'lucide-react';
 
 const languages = [
@@ -14,8 +15,32 @@ const languages = [
 export default function LanguageSwitcher() {
   const { language, setLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
 
   const currentLanguage = languages.find((lang) => lang.code === language);
+
+  const handleLanguageChange = (newLang: 'fr' | 'en' | 'ar') => {
+    setLanguage(newLang);
+    
+    // Get current path without language prefix
+    const pathSegments = pathname.split('/').filter(Boolean);
+    const currentLangInPath = ['fr', 'en', 'ar'].includes(pathSegments[0]) ? pathSegments[0] : null;
+    
+    // Get the path without locale prefix
+    const pathWithoutLang = currentLangInPath 
+      ? '/' + pathSegments.slice(1).join('/')
+      : pathname;
+    
+    // Build new path with new language prefix
+    const newPath = newLang === 'fr' 
+      ? pathWithoutLang === '/' ? '/fr' : `/fr${pathWithoutLang}`
+      : `/${newLang}${pathWithoutLang === '/' ? '' : pathWithoutLang}`;
+    
+    // Navigate to new path
+    router.push(newPath);
+    setIsOpen(false);
+  };
 
   return (
     <div className="relative">
@@ -50,10 +75,7 @@ export default function LanguageSwitcher() {
               {languages.map((lang) => (
                 <button
                   key={lang.code}
-                  onClick={() => {
-                    setLanguage(lang.code as 'fr' | 'en' | 'ar');
-                    setIsOpen(false);
-                  }}
+                  onClick={() => handleLanguageChange(lang.code as 'fr' | 'en' | 'ar')}
                   className={`w-full flex items-center gap-3 px-4 py-3 transition-colors ${
                     language === lang.code
                       ? 'bg-indigo-500/20 text-gray-900 dark:text-white'

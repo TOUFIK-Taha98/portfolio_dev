@@ -106,8 +106,9 @@ export default function Pricing() {
           className="mb-16 text-center"
         >
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4">
-            {t('pricing.title') && <span className="text-gray-900 dark:text-white">{t('pricing.title')} </span>}
-            <span className="gradient-text">{t('pricing.title_highlight')}</span>
+            <span className="gradient-text">
+              {t('pricing.title')} {t('pricing.title_highlight')}
+            </span>
           </h2>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
             {t('pricing.subtitle')}
