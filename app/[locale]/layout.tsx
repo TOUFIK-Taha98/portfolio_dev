@@ -137,7 +137,7 @@ export const viewport = {
 
 type Props = {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 // Generate static params for all locales
