@@ -27,9 +27,9 @@ export default function Pricing() {
     const rate = CURRENCY_RATES[currency.code as keyof typeof CURRENCY_RATES];
     const convertedPrice = Math.round(priceInEur * rate);
     
-    // Formatage selon la langue
+    // Formatage selon la langue (toujours utiliser les chiffres latins)
     if (language === 'ar') {
-      return `${convertedPrice.toLocaleString('ar-SA')} ${currency.symbol}`;
+      return `${convertedPrice.toLocaleString('en-US')} ${currency.symbol}`;
     }
     return `${currency.symbol}${convertedPrice.toLocaleString()}`;
   };
